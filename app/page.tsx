@@ -13,7 +13,7 @@ export default function Home() {
         </div>{' '}
       </div>
 
-      <div className="w-full">
+      <div className="w-full bg-[url('/assets/img/minecraft-bg-mine.jpg')] bg-cover bg-no-repeat">
         <About />
       </div>
     </div>
