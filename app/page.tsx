@@ -5,8 +5,8 @@ import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className="w-full">
-      <div className="bg-[url('/assets/bg.png')]">
+    <div className="w-full ">
+      <div className="h-screen bg-[url('/assets/bg.png')] bg-no-repeat">
         {' '}
         <NavBar />
         <MultiLayerParallax />
