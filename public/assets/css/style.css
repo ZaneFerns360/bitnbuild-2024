@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+        
+/* Font Family Definitions */
+body {
+font-family: 'Roboto', sans-serif; /* Use Roboto as the default font */
+}
+.brand-font {
+    font-family: Arial, Helvetica, sans-serif; /* Use Arial for the brand font */
+}
+
+.ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bg-body {
+    background-image: url('../img/minecraft-parallex/282.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.nav-bg {
+    /*background-image: url('../img/minecraft-parallex/282.png');*/
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+.flipped {
+    transform: scaleX(-1);
+}
+
+
+
+/* Add this to your existing CSS or create a new stylesheet */
+#hero-content {
+    transition: transform 0.3s ease-in-out;
+}
+
+.scrolled #hero-content {
+    transform: translateY(0);
+}
