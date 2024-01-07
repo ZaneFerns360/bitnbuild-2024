@@ -1,15 +1,27 @@
 import React from 'react'
+import { Bungee } from 'next/font/google'
+
+const bungee = Bungee({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 const NavBar = () => {
   return (
-    <header className="z-100 sticky top-0 bg-transparent shadow-md hover:bg-white lg:shadow-none">
+    <header className="z-100 sticky top-0 bg-transparent  hover:bg-red-200 hover:bg-opacity-50 lg:shadow-none">
       <div className="container mx-auto px-4 py-4">
-        <nav className="flex flex-col items-center justify-between lg:flex-row">
-          <ul className="mt-4 flex flex-col space-y-4 lg:mt-0 lg:flex lg:flex-row lg:space-x-6 lg:space-y-0">
+        <nav className="flex items-center justify-between">
+          <a href="#home" className={bungee.className + ' p-2 text-xl'}>
+            BitnBuild
+          </a>
+          <ul className="flex space-x-6">
             <li>
               <a
                 href="#home"
-                className="hover:text-brown-600 brand-font text-yellow-600"
+                className={
+                  bungee.className + ' hover:text-brown-600 p-2 text-yellow-600'
+                }
               >
                 Home
               </a>
@@ -17,7 +29,9 @@ const NavBar = () => {
             <li>
               <a
                 href="#shop"
-                className="hover:text-brown-600 brand-font text-yellow-600"
+                className={
+                  bungee.className + ' hover:text-brown-600 p-2 text-yellow-600'
+                }
               >
                 Shop
               </a>
@@ -25,7 +39,9 @@ const NavBar = () => {
             <li>
               <a
                 href="#designers"
-                className="hover:text-brown-600 brand-font text-yellow-600"
+                className={
+                  bungee.className + ' hover:text-brown-600 p-2 text-yellow-600'
+                }
               >
                 Designers
               </a>
@@ -33,7 +49,9 @@ const NavBar = () => {
             <li>
               <a
                 href="#contact"
-                className="hover:text-brown-600 brand-font text-yellow-600"
+                className={
+                  bungee.className + ' hover:text-brown-600 p-2 text-yellow-600'
+                }
               >
                 Contact
               </a>

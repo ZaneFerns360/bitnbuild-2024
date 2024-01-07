@@ -2,6 +2,13 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
+import { Bungee } from 'next/font/google'
+
+const bungee = Bungee({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 const About = () => {
   const [ref1, inView1] = useInView({
@@ -22,25 +29,23 @@ const About = () => {
       transition={{ duration: 0.7 }}
       ref={ref1}
     >
-      <div className="mx-auto flex w-4/6 flex-col  items-center justify-center text-center max-sm:h-fit md:px-5 md:pb-24 md:pt-48">
-        <h2 className="mb-5 text-4xl font-bold max-sm:pt-20 sm:pb-8 sm:text-7xl">
-          About Technothon 2024⚡
+      <div className="mx-auto flex w-4/6 flex-col items-center justify-center text-center max-sm:h-fit md:px-5 md:pb-24 md:pt-48">
+        <h2
+          className={
+            bungee.className +
+            ' mb-5 text-4xl font-bold max-sm:pt-20 sm:pb-8 sm:text-7xl'
+          }
+        >
+          BitnBuild 2024⚡
         </h2>
         <div className="leading-relaxed">
-          <p className="text-1xl mb-5 sm:text-3xl">
-            {
-              'Mumbai polytechnic students, get ready for Technothon 2024! A 24-hour hackathon full of excitement and creativity.'
-            }
+          <p className={bungee.className + ' text-1xl mb-5 sm:text-3xl'}>
+            'Welcome to BitnBuild 2024, a global hackathon in Mumbai! A 24-hour
+            event full of creativity, like a Minecraft world.'
           </p>
-          <p className="text-1xl mb-5 sm:text-3xl">
-            {
-              'Technothon is your chance to shine as a developer. Build from scratch, compete, and unlock your potential. Are you up for the challenge?'
-            }
-          </p>
-          <p className="text-1xl sm:text-3xl">
-            {
-              'This year, we introduce Blind Bet Registration! Register, discover your challenges on the spot, and embark on an exciting journey at Technothon 2024.'
-            }
+          <p className={bungee.className + ' text-1xl mb-5 sm:text-3xl'}>
+            'BitnBuild is your chance to shine as a developer. Are you ready to
+            compete with the best and unlock your potential?'
           </p>
         </div>
       </div>
