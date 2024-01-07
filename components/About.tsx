@@ -30,8 +30,8 @@ const About = () => {
       transition={{ duration: 1.0 }}
       ref={ref1}
     >
-      <div className="flex w-full flex-col items-center justify-center text-center max-sm:h-fit md:flex-row md:space-x-10 md:px-5 md:pb-24 md:pt-48">
-        <div>
+      <div className="flex w-full flex-col items-center justify-center text-left max-sm:h-fit md:flex-row md:space-x-10 md:px-5 md:pb-24 md:pt-48">
+        <div className="pl-10">
           <h2
             className={
               bungee.className +

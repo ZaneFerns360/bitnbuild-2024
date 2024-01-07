@@ -7,9 +7,10 @@ export default function Home() {
   return (
     <div className="w-full ">
       <div className="h-screen bg-[url('/assets/bg.png')] bg-no-repeat">
-        {' '}
-        <NavBar />
-        <MultiLayerParallax />
+        <div className="absolute inset-0 z-30 w-full bg-[url('/assets/mob.png')] bg-cover bg-no-repeat">
+          <NavBar />
+          <MultiLayerParallax />
+        </div>{' '}
       </div>
 
       <div className="w-full">
