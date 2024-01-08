@@ -27,42 +27,19 @@ const NavBar = () => {
       }
     }
 
-    const handleScroll = () => {
-      const scrollY = window.scrollY
-      const parallaxValue = scrollY * 0.4 // Adjust the parallax speed as needed
-
-      // Apply parallax effect to the background image
-      const backgroundImage = document.querySelector(
-        '#home .absolute.inset-0 img'
-      )
-      if (backgroundImage) {
-        backgroundImage.style.transform = `translate3d(0, ${parallaxValue}px, 0)`
-      }
-
-      // Apply other effects as needed for the hero content
-      if (scrollY > 0 && heroContent) {
-        heroContent.classList.add('scrolled')
-      } else if (heroContent) {
-        heroContent.classList.remove('scrolled')
-      }
-    }
-
     if (hamburgerBtn) {
       hamburgerBtn.addEventListener('click', handleHamburgerClick)
     }
-
-    window.addEventListener('scroll', handleScroll)
 
     return () => {
       if (hamburgerBtn) {
         hamburgerBtn.removeEventListener('click', handleHamburgerClick)
       }
-      window.removeEventListener('scroll', handleScroll)
     }
   }, [])
 
   return (
-    <header className="z-100 to sticky top-0 bg-transparent from-black to-transparent shadow-md hover:bg-gradient-to-t lg:shadow-none">
+    <header className="z-100 to sticky top-0 bg-transparent shadow-md hover:bg-gradient-to-t lg:shadow-none">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex flex-col items-center justify-between lg:flex-row">
           {/* Logo and Hamburger for Small Screens */}

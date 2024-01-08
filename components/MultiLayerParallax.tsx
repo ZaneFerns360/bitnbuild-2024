@@ -22,7 +22,7 @@ export default function MultiLayerParallax() {
         className="absolute inset-0 z-20"
         transition={{ type: 'spring', stiffness: 100, damping: 3000 }}
       >
-        <div className="z-21 inset-0 flex items-center justify-center pt-24">
+        <div className="inset-0 z-20 flex items-center justify-center p-4">
           <Image alt="GG" width={500} height={500} src="/assets/mc.png"></Image>
         </div>
       </motion.div>
@@ -31,7 +31,7 @@ export default function MultiLayerParallax() {
         className="absolute inset-0 z-10"
         transition={{ type: 'spring', stiffness: 0, damping: 1000 }}
         style={{
-          backgroundImage: `url(/assets/site-bg.png)`,
+          backgroundImage: `url(/assets/site-bg-2.jpg)`,
           backgroundPosition: 'top',
           backgroundSize: 'cover',
           y: backgroundY,
@@ -41,7 +41,7 @@ export default function MultiLayerParallax() {
         className="absolute inset-0 z-20 w-full bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url(/assets/site1.png)`,
-          backgroundPosition: 'bottom',
+          backgroundPosition: 'top',
         }}
       />
     </div>
