@@ -40,7 +40,7 @@ const About = () => {
           >
             BitnBuild 2024⚡
           </h2>
-          <div className="leading-relaxed">
+          <div className=" leading-relaxed">
             <p className={bungee.className + ' text-1xl mb-5 sm:text-3xl'}>
               Welcome to BitnBuild 2024, a global hackathon in Mumbai! A 24-hour
               event full of creativity, like a Minecraft world.
@@ -53,7 +53,7 @@ const About = () => {
         </div>
         <div className="h-full">
           <Image
-            src="/assets/about.png"
+            src="/assets/minecraft-mob.png"
             width={3000}
             height={3000}
             alt="About BitnBuild"

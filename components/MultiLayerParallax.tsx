@@ -31,7 +31,7 @@ export default function MultiLayerParallax() {
         className="absolute inset-0 z-10"
         transition={{ type: 'spring', stiffness: 0, damping: 1000 }}
         style={{
-          backgroundImage: `url(/assets/site-bg-2.jpg)`,
+          backgroundImage: `url(/assets/site-bg-3.jpg)`,
           backgroundPosition: 'top',
           backgroundSize: 'cover',
           y: backgroundY,
