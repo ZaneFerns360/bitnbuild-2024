@@ -3,7 +3,7 @@
 import React, { useEffect } from 'react'
 
 import { Bungee } from 'next/font/google'
-import Image from 'next/image'
+import Image from 'next/image';
 
 const bungee = Bungee({
   weight: '400',
@@ -39,18 +39,12 @@ const NavBar = () => {
   }, [])
 
   return (
-    <header className="z-100 to sticky top-0 bg-transparent shadow-md hover:bg-gradient-to-t lg:shadow-none">
+    <header className="z-100 sticky top-0 bg-transparent hover:bg-gradient-to-t from-black to-transparent to shadow-md lg:shadow-none">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex flex-col items-center justify-between lg:flex-row">
           {/* Logo and Hamburger for Small Screens */}
-          <div className="flex w-full items-center justify-between lg:w-auto">
-            <Image
-              src="/assets/mc.png"
-              alt="BitNBuild"
-              className="h-8 w-52"
-              width={100}
-              height={100}
-            />
+          <div className="flex items-center justify-between w-full lg:w-auto">
+            <Image src="/../public/assets/mc.png" alt="BitNBuild" className="h-8 w-52" width={100} height={100} />
             {/* Hamburger Menu Button */}
             <button id="hamburger-btn" className="focus:outline-none lg:hidden">
               <svg
