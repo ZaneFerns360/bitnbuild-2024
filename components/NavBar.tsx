@@ -5,6 +5,8 @@ import React, { useEffect } from 'react'
 import { Bungee } from 'next/font/google'
 import Image from 'next/image';
 
+import Logo from '@public/assets/mc.png'
+
 const bungee = Bungee({
   weight: '400',
   subsets: ['latin'],
@@ -44,7 +46,7 @@ const NavBar = () => {
         <nav className="flex flex-col items-center justify-between lg:flex-row">
           {/* Logo and Hamburger for Small Screens */}
           <div className="flex items-center justify-between w-full lg:w-auto">
-            <Image src="/../public/assets/mc.png" alt="BitNBuild" className="h-8 w-52" width={100} height={100} />
+            <Image src={Logo} alt="BitNBuild" className="h-8 w-52" width={100} height={100} />
             {/* Hamburger Menu Button */}
             <button id="hamburger-btn" className="focus:outline-none lg:hidden">
               <svg
