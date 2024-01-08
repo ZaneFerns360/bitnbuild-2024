@@ -68,7 +68,7 @@ const NavBar = () => {
 
           {/* Navigation Links */}
           <ul
-            className="mt-4 flex hidden flex-col space-y-4 lg:mt-0 lg:flex lg:flex-row lg:space-x-6 lg:space-y-0"
+            className="mt-4 flex  flex-col space-y-4 lg:mt-0 lg:flex lg:flex-row lg:space-x-6 lg:space-y-0 text-center"
             id="nav-links"
           >
             <li>
