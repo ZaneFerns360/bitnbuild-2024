@@ -19,19 +19,19 @@ export default function MultiLayerParallax() {
     >
       <motion.div
         style={{ y: textY }}
-        className="absolute inset-0 z-30"
+        className="absolute inset-0 z-20"
         transition={{ type: 'spring', stiffness: 100, damping: 3000 }}
       >
-        <div className="z-21 inset-0 flex items-center justify-center">
+        <div className="z-21 inset-0 flex items-center justify-center pt-24">
           <Image alt="GG" width={500} height={500} src="/assets/mc.png"></Image>
         </div>
       </motion.div>
 
       <motion.div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-10"
         transition={{ type: 'spring', stiffness: 0, damping: 1000 }}
         style={{
-          backgroundImage: `url(/assets/bg.png)`,
+          backgroundImage: `url(/assets/site-bg.png)`,
           backgroundPosition: 'top',
           backgroundSize: 'cover',
           y: backgroundY,
@@ -40,7 +40,7 @@ export default function MultiLayerParallax() {
       <div
         className="absolute inset-0 z-20 w-full bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url(/assets/mob.png)`,
+          backgroundImage: `url(/assets/site1.png)`,
           backgroundPosition: 'bottom',
         }}
       />
