@@ -1,5 +1,6 @@
 import About from '@components/About'
 import Faq from '@components/Faq'
+import Footer from '@components/Footer'
 import MultiLayerParallax from '@components/MultiLayerParallax'
 import NavBar from '@components/NavBar'
 import { Prizes } from '@components/Prizes'
@@ -19,6 +20,7 @@ export default function Home() {
         <About />
         <Prizes />
         <Faq />
+        <Footer />
       </div>
     </div>
   )
