@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import { Bungee } from 'next/font/google'
-import AboutImg from '@public/assets/FAQ.png'
+import FAQImg from '@public/assets/FAQ.png'
 
 const bungee = Bungee({
   weight: '400',
@@ -12,25 +12,24 @@ const bungee = Bungee({
 export const Faq = () => {
   return (
     <>
-      <section className="pt-12 text-gray-500">
-        <div className="mx-auto max-w-sm py-5 text-center">
+      <section className="py-5 text-gray-900 bg-conic-gradient" style={{ backgroundImage: 'conic-gradient(#8F8F8F 90deg, #7F7F7F 90deg 180deg, #8F8F8F 180deg 270deg, #7F7F7F 270deg)', backgroundRepeat: 'repeat', backgroundSize: '60px 60px', backgroundPosition: 'top left' }}>
+        <div className="mx-auto max-w-sm py-4 text-center">
           <Image
             className="mx-auto text-center"
-            src={AboutImg}
-            width={200}
-            height={200}
+            src={FAQImg}
+            width={150}
+            height={150}
             alt="about-us"
           />
         </div>
 
-        <div className="container mx-auto px-5 py-24">
-          <div className="mb-20 text-center">
-            <h1 className="title-font mb-4 text-center text-2xl font-medium text-white sm:text-3xl">
+        <div className="container mx-auto px-5 py-2 md:py-10">
+          <div className="my-10 text-center">
+            <h1 className="title-font mb-4 text-center text-2xl font-semibold text-white sm:text-3xl">
               Some common questions were often asked
             </h1>
-            <p className="mx-auto text-base leading-relaxed lg:w-3/4 xl:w-2/4">
-              The most common questions about how our business works and what
-              can do for you.
+            <p className="mx-auto text-base leading-relaxed lg:w-3/4 xl:w-2/4 text-white">
+              The most common questions about how our hackathon will be conducted
             </p>
           </div>
           <div className="-mx-2 flex flex-wrap sm:mx-auto sm:mb-2 lg:w-4/5">
