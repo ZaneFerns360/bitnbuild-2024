@@ -12,7 +12,16 @@ const bungee = Bungee({
 export const Faq = () => {
   return (
     <>
-      <section className="py-5 text-gray-900 bg-conic-gradient" style={{ backgroundImage: 'conic-gradient(#8F8F8F 90deg, #7F7F7F 90deg 180deg, #8F8F8F 180deg 270deg, #7F7F7F 270deg)', backgroundRepeat: 'repeat', backgroundSize: '60px 60px', backgroundPosition: 'top left' }}>
+      <section
+        className="bg-conic-gradient py-5 text-gray-900"
+        style={{
+          backgroundImage:
+            'conic-gradient(#8F8F8F 90deg, #7F7F7F 90deg 180deg, #8F8F8F 180deg 270deg, #7F7F7F 270deg)',
+          backgroundRepeat: 'repeat',
+          backgroundSize: '60px 60px',
+          backgroundPosition: 'top left',
+        }}
+      >
         <div className="mx-auto max-w-sm py-4 text-center">
           <Image
             className="mx-auto text-center"
@@ -28,8 +37,9 @@ export const Faq = () => {
             <h1 className="title-font mb-4 text-center text-2xl font-semibold text-white sm:text-3xl">
               Some common questions were often asked
             </h1>
-            <p className="mx-auto text-base leading-relaxed lg:w-3/4 xl:w-2/4 text-white">
-              The most common questions about how our hackathon will be conducted
+            <p className="mx-auto text-base leading-relaxed text-white lg:w-3/4 xl:w-2/4">
+              The most common questions about how our hackathon will be
+              conducted
             </p>
           </div>
           <div className="-mx-2 flex flex-wrap sm:mx-auto sm:mb-2 lg:w-4/5">

@@ -17,7 +17,7 @@ const Footer = () => {
             <a
               className={
                 bungee.className +
-                ' flex-none text-4xl font-semibold text-black text-yellow-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 '
+                ' flex-none text-4xl font-semibold text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 '
               }
               href="#"
               aria-label="Brand"
@@ -26,7 +26,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="mt-3 text-2xl">
+          <div className="mt-3 text-2xl md:text-3xl">
             <p className={bungee.className + ' text-white'}>
               The Callaborative Hackathon{' '}
               <a
