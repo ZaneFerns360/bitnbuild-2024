@@ -1,103 +1,114 @@
 import React from 'react'
-
-import { Bungee } from 'next/font/google';
+import Image from 'next/image'
+import { Bungee } from 'next/font/google'
+import AboutImg from '@public/assets/FAQ.png'
 
 const bungee = Bungee({
-    weight: '400',
-    subsets: ['latin'],
-    display: 'swap',
-  });
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const Faq = () => {
   return (
     <>
-            <section className="text-gray-500">
-                <div className="container px-5 py-24 mx-auto">
-                <div className="text-center mb-20">
-                    <h1 className="sm:text-3xl text-2xl font-medium text-center title-font text-white mb-4">
-                    Some common questions were often asked
-                    </h1>
-                    <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-                        The most common questions about how our business works and what
-                        can do for you.
-                    </p>
-                </div>
-                <div className="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
-                    <div className="w-full lg:w-1/2 px-4 py-2">
-                    <details className="mb-4">
-                        <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                        How Long is this site live?
-                        </summary>
+      <section className="pt-12 text-gray-500">
+        <div className="mx-auto max-w-sm py-5 text-center">
+          <Image
+            className="mx-auto text-center"
+            src={AboutImg}
+            width={200}
+            height={200}
+            alt="about-us"
+          />
+        </div>
 
-                        <span>
-                            Laboris qui labore cillum culpa in sunt quis sint veniam.
-                            Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                            minim velit nostrud pariatur culpa magna in aute.
-                        </span>
-                    </details>
-                    <details className="mb-4">
-                        <summary className="font-semibold bg-gray-200 rounded-md py-2 px-4">
-                        Can I install/upload anything I want on there?
-                        </summary>
+        <div className="container mx-auto px-5 py-24">
+          <div className="mb-20 text-center">
+            <h1 className="title-font mb-4 text-center text-2xl font-medium text-white sm:text-3xl">
+              Some common questions were often asked
+            </h1>
+            <p className="mx-auto text-base leading-relaxed lg:w-3/4 xl:w-2/4">
+              The most common questions about how our business works and what
+              can do for you.
+            </p>
+          </div>
+          <div className="-mx-2 flex flex-wrap sm:mx-auto sm:mb-2 lg:w-4/5">
+            <div className="w-full px-4 py-2 lg:w-1/2">
+              <details className="mb-4">
+                <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
+                  How Long is this site live?
+                </summary>
 
-                        <span>
-                        Laboris qui labore cillum culpa in sunt quis sint veniam.
-                        Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                        minim velit nostrud pariatur culpa magna in aute.
-                        </span>
-                    </details>
-                    <details className="mb-4">
-                        <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                        How can I migrate to another site?
-                        </summary>
+                <span>
+                  Laboris qui labore cillum culpa in sunt quis sint veniam.
+                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                  minim velit nostrud pariatur culpa magna in aute.
+                </span>
+              </details>
+              <details className="mb-4">
+                <summary className="rounded-md bg-gray-200 px-4 py-2 font-semibold">
+                  Can I install/upload anything I want on there?
+                </summary>
 
-                        <span>
-                        Laboris qui labore cillum culpa in sunt quis sint veniam.
-                        Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                        minim velit nostrud pariatur culpa magna in aute.
-                        </span>
-                    </details>
-                    </div>
-                    <div className="w-full lg:w-1/2 px-4 py-2">
-                    <details className="mb-4">
-                        <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                        Can I change the domain you give me?
-                        </summary>
+                <span>
+                  Laboris qui labore cillum culpa in sunt quis sint veniam.
+                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                  minim velit nostrud pariatur culpa magna in aute.
+                </span>
+              </details>
+              <details className="mb-4">
+                <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
+                  How can I migrate to another site?
+                </summary>
 
-                        <span className="px-4 py-2">
-                        Laboris qui labore cillum culpa in sunt quis sint veniam.
-                        Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                        minim velit nostrud pariatur culpa magna in aute.
-                        </span>
-                    </details>
-                    <details className="mb-4">
-                        <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                        How many sites I can create at once?
-                        </summary>
+                <span>
+                  Laboris qui labore cillum culpa in sunt quis sint veniam.
+                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                  minim velit nostrud pariatur culpa magna in aute.
+                </span>
+              </details>
+            </div>
+            <div className="w-full px-4 py-2 lg:w-1/2">
+              <details className="mb-4">
+                <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
+                  Can I change the domain you give me?
+                </summary>
 
-                        <span className="px-4 py-2">
-                        Laboris qui labore cillum culpa in sunt quis sint veniam.
-                        Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                        minim velit nostrud pariatur culpa magna in aute.
-                        </span>
-                    </details>
-                    <details className="mb-4">
-                        <summary className="font-semibold  bg-gray-200 rounded-md py-2 px-4">
-                        How can I communicate with you?
-                        </summary>
+                <span className="px-4 py-2">
+                  Laboris qui labore cillum culpa in sunt quis sint veniam.
+                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                  minim velit nostrud pariatur culpa magna in aute.
+                </span>
+              </details>
+              <details className="mb-4">
+                <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
+                  How many sites I can create at once?
+                </summary>
 
-                        <span className="px-4 py-2">
-                        Laboris qui labore cillum culpa in sunt quis sint veniam.
-                        Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                        minim velit nostrud pariatur culpa magna in aute.
-                        </span>
-                    </details>
-                    </div>
-                </div>
-                </div>
-            </section>
-        </>
+                <span className="px-4 py-2">
+                  Laboris qui labore cillum culpa in sunt quis sint veniam.
+                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                  minim velit nostrud pariatur culpa magna in aute.
+                </span>
+              </details>
+              <details className="mb-4">
+                <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
+                  How can I communicate with you?
+                </summary>
+
+                <span className="px-4 py-2">
+                  Laboris qui labore cillum culpa in sunt quis sint veniam.
+                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
+                  minim velit nostrud pariatur culpa magna in aute.
+                </span>
+              </details>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }
 
-export default Faq;
+export default Faq

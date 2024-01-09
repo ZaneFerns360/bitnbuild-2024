@@ -1,35 +1,43 @@
 'use client'
 
-import React, { useState } from 'react';
-import { Bungee } from 'next/font/google';
-import Image from 'next/image';
-import Logo from '@public/assets/mc.png';
-import '@components/Navbar.css';
+import React, { useState } from 'react'
+import { Bungee } from 'next/font/google'
+import Image from 'next/image'
+import Logo from '@public/assets/mc.png'
+import '@components/Navbar.css'
 
 const bungee = Bungee({
   weight: '400',
   subsets: ['latin'],
   display: 'swap',
-});
+})
 
 const NavBar = () => {
-  const [isNavVisible, setIsNavVisible] = useState(false);
+  const [isNavVisible, setIsNavVisible] = useState(false)
 
   const handleHamburgerClick = () => {
-    setIsNavVisible(!isNavVisible);
-  };
+    setIsNavVisible(!isNavVisible)
+  }
 
   return (
-    <header className="z-100 sticky top-0 bg-image shadow-md lg:shadow-none">
+    <header className="z-100 bg-image sticky top-0 shadow-md lg:shadow-none">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex flex-col items-center justify-between lg:flex-row">
           {/* Logo and Hamburger for Small Screens */}
-          <div className="flex items-center justify-between w-full lg:w-auto">
-            <Image src={Logo} alt="BitNBuild" className="h-8 w-52" width={100} height={100} />
+          <div className="flex w-full items-center justify-between lg:w-auto">
+            <Image
+              src={Logo}
+              alt="BitNBuild"
+              className="h-8 w-52"
+              width={100}
+              height={100}
+            />
             {/* Hamburger Menu Button */}
             <button
               id="hamburger-btn"
-              className={`focus:outline-none lg:hidden ${isNavVisible ? 'flipped' : ''}`}
+              className={`focus:outline-none lg:hidden ${
+                isNavVisible ? 'flipped' : ''
+              }`}
               onClick={handleHamburgerClick}
             >
               <svg
@@ -51,7 +59,7 @@ const NavBar = () => {
 
           {/* Navigation Links */}
           <ul
-            className={`mt-4 flex flex-col space-y-4 lg:mt-0 lg:flex lg:flex-row lg:space-x-6 lg:space-y-0 text-center ${
+            className={`mt-4 flex flex-col space-y-4 text-center lg:mt-0 lg:flex lg:flex-row lg:space-x-6 lg:space-y-0 ${
               isNavVisible ? '' : 'hidden'
             }`}
             id="nav-links"
@@ -59,7 +67,7 @@ const NavBar = () => {
             <li>
               <a
                 href="#home"
-                className="brand-font text-green-600 hover:underline font-bold hover:text-green-800"
+                className="brand-font font-bold text-green-600 hover:text-green-800 hover:underline"
               >
                 Home
               </a>
@@ -67,33 +75,32 @@ const NavBar = () => {
             <li>
               <a
                 href="#shop"
-                className="brand-font text-green-600 hover:underline font-bold hover:text-green-800"
+                className="brand-font font-bold text-green-600 hover:text-green-800 hover:underline"
               >
-                Shop
+                About{' '}
               </a>
             </li>
             <li>
               <a
                 href="#designers"
-                className="brand-font text-green-600 hover:underline font-bold hover:text-green-800"
+                className="brand-font font-bold text-green-600 hover:text-green-800 hover:underline"
               >
-                Designers
+                Contact Us{' '}
               </a>
             </li>
             <li>
               <a
                 href="#contact"
-                className="brand-font text-green-600 hover:underline font-bold hover:text-green-800"
+                className="brand-font font-bold text-green-600 hover:text-green-800 hover:underline"
               >
-                Contact
+                FAQ
               </a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
-  );
-};
+  )
+}
 
-export default NavBar;
-
+export default NavBar

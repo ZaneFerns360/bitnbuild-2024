@@ -10,14 +10,14 @@ const bungee = Bungee({
 
 const Footer = () => {
   return (
-    <div className="min-h-96 w-full bg-[url('/assets/resize.webp')] bg-cover bg-no-repeat">
+    <div className="min-h-96 w-full bg-[url('/assets/resize.webp')] bg-cover bg-no-repeat pt-12">
       <footer className="mx-auto w-full  px-4 py-10 sm:px-6 lg:px-8">
         <div className="text-center">
           <div>
             <a
               className={
                 bungee.className +
-                ' flex-none text-4xl font-semibold text-black dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 '
+                ' flex-none text-4xl font-semibold text-black text-yellow-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 '
               }
               href="#"
               aria-label="Brand"
