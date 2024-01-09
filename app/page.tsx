@@ -1,6 +1,8 @@
 import About from '@components/About'
+import Faq from '@components/Faq'
 import MultiLayerParallax from '@components/MultiLayerParallax'
 import NavBar from '@components/NavBar'
+import { Prizes } from '@components/Prizes'
 import Image from 'next/image'
 
 export default function Home() {
@@ -15,6 +17,8 @@ export default function Home() {
 
       <div className="w-full  bg-cover bg-no-repeat">
         <About />
+        <Prizes />
+        <Faq />
       </div>
     </div>
   )

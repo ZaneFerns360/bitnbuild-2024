@@ -30,17 +30,17 @@ const About = () => {
 
   // JSX structure with grid layout
   return (
-    <div className='bg-gradient-to-b from-yellow-800 to-orange-950'>
+    <div className='bg-gradient-to-b from-yellow-800 to-orange-950 py-5'>
       <motion.div
       animate={inView1 ? 'visible' : 'hidden'}
       variants={variants}
       exit="hidden"
       transition={{ duration: 1.0 }}
       ref={ref1}
-      className=" items-center justify-center max-sm:h-fit md:px-5 md:py-20 mt-48 md:mt-2 "
+      className=" items-center justify-center max-sm:h-fit md:px-5 md:py-20 mt-10 md:mt-0 "
     >
       {/* Top Section with AboutImg */}
-        <div className='text-center max-w-sm mx-auto my-3 py-8'>
+        <div className='text-center max-w-sm mx-auto py-5'>
           <Image className='text-center mx-auto' src={AboutImg} width={200} height={200} alt='about-us' />
         </div>
 
