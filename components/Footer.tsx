@@ -1,4 +1,12 @@
 import React from 'react'
+import { Bungee } from 'next/font/google'
+
+// Define the Bungee font
+const bungee = Bungee({
+  weight: '400',
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 const Footer = () => {
   return (
@@ -7,7 +15,10 @@ const Footer = () => {
         <div className="text-center">
           <div>
             <a
-              className="flex-none text-xl font-semibold text-black dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              className={
+                bungee.className +
+                ' flex-none text-4xl font-semibold text-black dark:text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 '
+              }
               href="#"
               aria-label="Brand"
             >
@@ -15,32 +26,35 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="mt-3">
-            <p className="text-gray-500">
+          <div className="mt-3 text-2xl">
+            <p className={bungee.className + ' text-white'}>
               The Callaborative Hackathon{' '}
               <a
-                className="font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-400"
+                className={
+                  bungee.className +
+                  ' font-semibold text-blue-600 hover:text-blue-700 dark:text-blue-500 dark:hover:text-blue-400'
+                }
                 href="#"
               >
                 -GDSC
               </a>{' '}
               family.
             </p>
-            <p className="text-gray-500">
+            <p className={bungee.className + ' text-white'}>
               © GDSC Fr.Crce. 2024. All rights reserved.
             </p>
           </div>
 
           <div className="mt-3 space-x-2">
             <a
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full text-center text-gray-500 transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:text-gray-500 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full text-center text-white transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-200"
               href="#"
             >
               <svg
-                className="h-3.5 w-3.5 flex-shrink-0"
+                className="h-6 w-6 flex-shrink-0" // Increase the height and width here
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="24" // Increase the width here
+                height="24" // Increase the height here
                 fill="currentColor"
                 viewBox="0 0 16 16"
               >
@@ -48,14 +62,14 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full text-center text-gray-500 transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:text-gray-500 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full text-center text-white transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-200"
               href="#"
             >
               <svg
-                className="h-3.5 w-3.5 flex-shrink-0"
+                className="h-6 w-6 flex-shrink-0" // Increase the height and width here
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="24" // Increase the width here
+                height="24" // Increase the height here
                 fill="currentColor"
                 viewBox="0 0 16 16"
               >
@@ -63,14 +77,14 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full text-center text-gray-500 transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:text-gray-500 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full text-center text-white transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-200"
               href="#"
             >
               <svg
-                className="h-3.5 w-3.5 flex-shrink-0"
+                className="h-6 w-6 flex-shrink-0" // Increase the height and width here
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="24" // Increase the width here
+                height="24" // Increase the height here
                 fill="currentColor"
                 viewBox="0 0 16 16"
               >
@@ -78,14 +92,14 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full text-center text-gray-500 transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:text-gray-500 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full text-center text-white transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-200"
               href="#"
             >
               <svg
-                className="h-3.5 w-3.5 flex-shrink-0"
+                className="h-6 w-6 flex-shrink-0" // Increase the height and width here
                 xmlns="http://www.w3.org/2000/svg"
-                width="16"
-                height="16"
+                width="24" // Increase the width here
+                height="24" // Increase the height here
                 fill="currentColor"
                 viewBox="0 0 16 16"
               >
