@@ -2,6 +2,11 @@ import React from 'react'
 
 import { Bungee } from 'next/font/google'
 import Image from 'next/image'
+import PrizesImg from '@public/assets/tracks.png'
+import Prizes1 from '@public/assets/prizes/1stPrizes.png'
+import Prizes2 from '@public/assets/prizes/2ndPrizes.png'
+import Prizes3 from '@public/assets/prizes/3rdPrizes.png'
+
 const bungee = Bungee({
   weight: '400',
   subsets: ['latin'],
@@ -10,85 +15,60 @@ const bungee = Bungee({
 
 export const Prizes = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
-      <div className="py-2">
-        <h1
-          className={
-            bungee.className +
-            ' my-2 text-center text-4xl font-bold sm:text-7xl'
-          }
-        >
-          Prizes
-        </h1>
-      </div>
-      <div className="mx-auto max-w-sm py-5 text-center">
-        <Image
-          className="mx-auto text-center"
-          src="/assets/minecraft-podium.png"
-          width={200}
-          height={200}
-          alt="about-us"
-        />
-      </div>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-2">
-        {/* 1st place content */}
-        <div className="px-5 text-center">
-          <h2
-            className={
-              bungee.className +
-              ' mb-5 text-4xl font-bold text-blue-500 max-sm:py-10 sm:py-4 sm:text-5xl'
-            }
-          >
-            1st Place
-          </h2>
-          <div className="leading-relaxed">
-            <p
-              className={
-                bungee.className +
-                ' text-1xl my-3 mt-2 text-green-500 sm:text-3xl'
-              }
-            >
-              ₹ 50,000
-            </p>
-          </div>
+    <section className="flex flex-col items-center justify-center py-5" style={{
+      backgroundImage:
+        'conic-gradient(#8F8F8F 90deg, #7F7F7F 90deg 180deg, #8F8F8F 180deg 270deg, #7F7F7F 270deg)',
+      backgroundRepeat: 'repeat',
+      backgroundSize: '60px 60px',
+      backgroundPosition: 'top left',
+    }}>
+      <div className="mx-auto max-w-md py-4 text-center">
+          <Image
+            className="mx-auto text-center"
+            src={PrizesImg}
+            width={250}
+            height={250}
+            alt="Prizes"
+          />
         </div>
-
-        {/* 2nd place content */}
-        <div className="px-5 text-center">
-          <h2
-            className={
-              bungee.className +
-              ' mb-5 text-4xl font-bold text-purple-500 max-sm:py-10 sm:py-4 sm:text-5xl'
-            }
-          >
-            2nd Place
-          </h2>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-0">
+        {/* 1st place content */}
+        <div className="px-5 text-center md:mt-8 ">
+          <Image className='' src={Prizes2} width={400} height={400} alt='prize1'/>
           <div className="leading-relaxed">
             <p
               className={
                 bungee.className +
-                ' text-1xl my-3 mt-2 text-red-500 sm:text-3xl'
+                ' text-1xl my-3 mt-2 text-yellow-500 sm:text-3xl'
               }
             >
               ₹ 25,000
             </p>
           </div>
         </div>
-        {/* 3rd place content */}
+
+        {/* 2nd place content */}
         <div className="px-5 text-center">
-          <h2
-            className={
-              bungee.className +
-              ' mb-5 text-4xl font-bold text-yellow-500 max-sm:py-10 sm:py-4 sm:text-5xl'
-            }
-          >
-            3rd Place
-          </h2>
+          <Image className='' src={Prizes1} width={400} height={400} alt='prize1'/>
           <div className="leading-relaxed">
             <p
               className={
                 bungee.className +
-                ' text-1xl my-3 mt-2 text-pink-500 sm:text-3xl'
+                ' text-1xl my-3 mt-2 text-yellow-500 sm:text-3xl'
+              }
+            >
+              ₹ 50,000
+            </p>
+          </div>
+        </div>
+        {/* 3rd place content */}
+        <div className="px-5 text-center md:mt-10">
+          <Image className='' src={Prizes3} width={400} height={400} alt='prize1'/>
+          <div className="leading-relaxed">
+            <p
+              className={
+                bungee.className +
+                ' text-1xl my-3 mt-2 text-yellow-500 sm:text-3xl'
               }
             >
               ₹ 15,000
@@ -96,6 +76,6 @@ export const Prizes = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
