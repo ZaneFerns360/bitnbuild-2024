@@ -74,7 +74,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#shop"
+                href="#about"
                 className="brand-font font-bold text-green-600 hover:text-green-800 hover:underline"
               >
                 About{' '}
