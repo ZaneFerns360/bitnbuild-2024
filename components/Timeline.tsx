@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Timeline = () => (
-  <div className="flex h-full w-screen items-center justify-center bg-gray-800 bg-[url('/assets/stone.jpg')] bg-repeat">
+  <div className="flex h-full items-center justify-center bg-gray-800 bg-[url('/assets/stone.jpg')] bg-repeat">
     <div className="wrap relative h-full overflow-hidden p-10">
       <div
         className="border-2-2 absolute h-full border border-gray-700 border-opacity-20"
