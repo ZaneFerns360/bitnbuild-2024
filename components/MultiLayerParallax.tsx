@@ -26,7 +26,7 @@ export default function MultiLayerParallax() {
       >
         <div className="inset-0 z-20 flex flex-col items-center justify-center space-y-5 p-4">
           <Image alt="GG" width={500} height={500} src="/assets/mc.png"></Image>
-          <button className="button">Sign Up</button>
+          <button className="signup">Sign Up</button>
         </div>
       </motion.div>
 

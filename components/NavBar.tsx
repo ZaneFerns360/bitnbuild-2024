@@ -34,7 +34,7 @@ const NavBar = () => {
             />
             {/* Hamburger Menu Button */}
             <button
-              id="hamburger-btn"
+              id="hamburger"
               className={`focus:outline-none lg:hidden ${
                 isNavVisible ? 'flipped' : ''
               }`}
