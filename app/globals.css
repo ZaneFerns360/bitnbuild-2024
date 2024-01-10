@@ -47,3 +47,22 @@ body {
   font-weight: 900;
   transition: all 0.7s cubic-bezier(0, 0.8, 0.26, 0.99);
 }
+
+@layer base {
+  :root {
+    --gdsc-red: 4 90% 58%;
+    --gdsc-blue: 217 89% 61%;
+    --gdsc-yellow: 45 100% 58%;
+    --gdsc-green: 136 53% 43%;
+    --gdsc-gray: 0 0% 76%;
+
+    --border: 0 0% 0%;
+    --border-size: 3px;
+    --border-offset: 10px;
+    --border-offset2: 20px;
+
+   :html {
+      @apply scroll-smooth;
+    }
+  }
+}
