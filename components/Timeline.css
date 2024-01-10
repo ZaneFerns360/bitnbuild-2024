@@ -1,0 +1,8 @@
+.cards-right{
+    background: rgb(98,0,255);
+    background: linear-gradient(45deg, rgb(0, 255, 225) 0%, rgba(255,255,255,1) 100%);
+}
+.cards-left{
+    background: rgb(9,140,49);
+    background: linear-gradient(45deg, rgba(9,140,49,1) 40%, rgba(255,255,255,1) 100%);
+}
