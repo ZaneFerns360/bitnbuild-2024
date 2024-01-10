@@ -46,42 +46,36 @@ export const Faq = () => {
             <div className="w-full px-4 py-2 lg:w-1/2">
               <details className="mb-4">
                 <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
-                  How Long is this site live?
+                  What is a hackathon?
                 </summary>
 
                 <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                  Hacking is a creative way to solve a problem, and hackathons are innovation marathons where students from around the country who have an interest in technology come together to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere.
                 </span>
               </details>
               <details className="mb-4">
                 <summary className="rounded-md bg-gray-200 px-4 py-2 font-semibold">
-                  Can I install/upload anything I want on there?
+                  How many people per team?
                 </summary>
 
                 <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                  Teams can range anywhere from 2-4 people.
                 </span>
               </details>
               <details className="mb-4">
                 <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
-                  How can I migrate to another site?
+                  What does it cost?
                 </summary>
 
                 <span>
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                Bit N Build is free for all hackers! We provide our hackers with tools, swags, and prizes without any cost through our generous sponsors.
                 </span>
               </details>
             </div>
             <div className="w-full px-4 py-2 lg:w-1/2">
               <details className="mb-4">
-                <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
-                  Can I change the domain you give me?
+                <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold"> 
+                  Who can participate? Are There any prerequisites or required skills?
                 </summary>
 
                 <span className="px-4 py-2">
@@ -92,24 +86,20 @@ export const Faq = () => {
               </details>
               <details className="mb-4">
                 <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
-                  How many sites I can create at once?
+                  Will there be food?
                 </summary>
 
                 <span className="px-4 py-2">
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                  Yes, delicious food and beverages will be provided throughout the event.
                 </span>
               </details>
               <details className="mb-4">
                 <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
-                  How can I communicate with you?
+                  Who will be judging?
                 </summary>
 
                 <span className="px-4 py-2">
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                  The judge panel composition will be announced closer to the date of the hackathon.
                 </span>
               </details>
             </div>
