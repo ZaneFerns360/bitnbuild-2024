@@ -2,6 +2,8 @@
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import React, { useRef } from 'react'
+import Link from 'next/link'
+import '@components/button.css'
 
 export default function MultiLayerParallax() {
   const ref = useRef(null)
@@ -19,11 +21,12 @@ export default function MultiLayerParallax() {
     >
       <motion.div
         style={{ y: textY }}
-        className="absolute inset-0 z-20"
+        className="absolute inset-0 z-30"
         transition={{ type: 'spring', stiffness: 100, damping: 3000 }}
       >
-        <div className="inset-0 z-20 flex items-center justify-center p-4">
+        <div className="inset-0 z-20 flex flex-col items-center justify-center space-y-5 p-4">
           <Image alt="GG" width={500} height={500} src="/assets/mc.png"></Image>
+          <button className="button">Sign Up</button>
         </div>
       </motion.div>
 
@@ -38,10 +41,11 @@ export default function MultiLayerParallax() {
         }}
       />
       <div
-        className="absolute inset-0 z-20 w-full bg-cover bg-no-repeat"
+        className="absolute inset-0 z-30 w-full bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url(/assets/site1.png)`,
           backgroundPosition: 'top',
+          pointerEvents: 'none', // Add this line
         }}
       />
     </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Timeline = () => (
+const Timeline2 = () => (
   <div className="flex h-full w-screen items-center justify-center bg-gray-800 bg-[url('/assets/stone.jpg')] bg-repeat">
     <div className="wrap relative h-full overflow-hidden p-10">
       <div
@@ -51,4 +51,4 @@ const Timeline = () => (
   </div>
 )
 
-export default Timeline
+export default Timeline2

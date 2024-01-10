@@ -15,26 +15,44 @@ const bungee = Bungee({
 
 export const Prizes = () => {
   return (
-    <section className="flex flex-col items-center justify-center py-5" style={{
-      backgroundImage:
-        'conic-gradient(#8F8F8F 90deg, #7F7F7F 90deg 180deg, #8F8F8F 180deg 270deg, #7F7F7F 270deg)',
-      backgroundRepeat: 'repeat',
-      backgroundSize: '60px 60px',
-      backgroundPosition: 'top left',
-    }}>
-      <div className="mx-auto max-w-md py-4 text-center">
-          <Image
-            className="mx-auto text-center"
-            src={PrizesImg}
-            width={250}
-            height={250}
-            alt="Prizes"
-          />
-        </div>
+    <section
+      className="flex flex-col items-center justify-center py-5"
+      style={{
+        backgroundImage:
+          'conic-gradient(#8F8F8F 90deg, #7F7F7F 90deg 180deg, #8F8F8F 180deg 270deg, #7F7F7F 270deg)',
+        backgroundRepeat: 'repeat',
+        backgroundSize: '60px 60px',
+        backgroundPosition: 'top left',
+      }}
+    >
+      {/* <div className="mx-auto max-w-md py-4 text-center">
+        <Image
+          className="mx-auto text-center"
+          src={PrizesImg}
+          width={250}
+          height={250}
+          alt="Prizes"
+        />
+      </div> */}
+      <div className="mx-auto max-w-sm py-5 text-center">
+        <Image
+          className="mx-auto text-center"
+          src="/assets/Prizes.png"
+          width={200}
+          height={200}
+          alt="Prizes"
+        />
+      </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-0">
         {/* 1st place content */}
         <div className="px-5 text-center md:mt-8 ">
-          <Image className='' src={Prizes2} width={400} height={400} alt='prize1'/>
+          <Image
+            className=""
+            src={Prizes2}
+            width={400}
+            height={400}
+            alt="prize1"
+          />
           <div className="leading-relaxed">
             <p
               className={
@@ -49,7 +67,13 @@ export const Prizes = () => {
 
         {/* 2nd place content */}
         <div className="px-5 text-center">
-          <Image className='' src={Prizes1} width={400} height={400} alt='prize1'/>
+          <Image
+            className=""
+            src={Prizes1}
+            width={400}
+            height={400}
+            alt="prize1"
+          />
           <div className="leading-relaxed">
             <p
               className={
@@ -63,7 +87,13 @@ export const Prizes = () => {
         </div>
         {/* 3rd place content */}
         <div className="px-5 text-center md:mt-10">
-          <Image className='' src={Prizes3} width={400} height={400} alt='prize1'/>
+          <Image
+            className=""
+            src={Prizes3}
+            width={400}
+            height={400}
+            alt="prize1"
+          />
           <div className="leading-relaxed">
             <p
               className={
