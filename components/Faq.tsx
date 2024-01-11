@@ -50,7 +50,7 @@ export const Faq = () => {
                   What is a hackathon?
                 </summary>
 
-                <span>
+                <span className="block rounded-md bg-white px-4 py-2">
                   Hacking is a creative way to solve a problem, and hackathons
                   are innovation marathons where students from around the
                   country who have an interest in technology come together to
@@ -63,14 +63,16 @@ export const Faq = () => {
                   How many people per team?
                 </summary>
 
-                <span>Teams can range anywhere from 2-4 people.</span>
+                <span className="block rounded-md bg-white px-4 py-2">
+                  Teams can range anywhere from 2-4 people.
+                </span>
               </details>
               <details className="mb-4">
                 <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
                   What does it cost?
                 </summary>
 
-                <span>
+                <span className="block rounded-md bg-white px-4 py-2">
                   Bit N Build is free for all hackers! We provide our hackers
                   with tools, swags, and prizes without any cost through our
                   generous sponsors.
@@ -80,14 +82,11 @@ export const Faq = () => {
             <div className="w-full px-4 py-2 lg:w-1/2">
               <details className="mb-4">
                 <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
-                  Who can participate? Are There any prerequisites or required
-                  skills?
+                  Who can participate? Are there any required skills?
                 </summary>
 
-                <span className="px-4 py-2">
-                  Laboris qui labore cillum culpa in sunt quis sint veniam.
-                  Dolore ex aute deserunt esse ipsum elit aliqua. Aute quis
-                  minim velit nostrud pariatur culpa magna in aute.
+                <span className="block rounded-md bg-white px-4 py-2">
+                  Laboris qui labore cillum
                 </span>
               </details>
               <details className="mb-4">
@@ -95,7 +94,7 @@ export const Faq = () => {
                   Will there be food?
                 </summary>
 
-                <span className="px-4 py-2">
+                <span className="block rounded-md bg-white px-4 py-2">
                   Yes, delicious food and beverages will be provided throughout
                   the event.
                 </span>
@@ -105,7 +104,7 @@ export const Faq = () => {
                   Who will be judging?
                 </summary>
 
-                <span className="px-4 py-2">
+                <span className=" block rounded-md bg-white px-4 py-2">
                   The judge panel composition will be announced closer to the
                   date of the hackathon.
                 </span>
