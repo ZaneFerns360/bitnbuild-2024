@@ -54,16 +54,19 @@ const Footer = () => {
           <h2 className={bungee.className + ' mb-2 text-2xl text-white'}>
             Contact Us
           </h2>
-          <a href="https://www.instagram.com/gdsc_crce/">
+          <a href="https://www.instagram.com/gdsc_crce/" className="text-white">
             <FaInstagram className="inline-block text-4xl" />
           </a>
-          <a href="https://github.com/CRCE-GDSC">
+          <a href="https://github.com/CRCE-GDSC" className="text-white">
             <FaGithub className="inline-block text-4xl" />
           </a>
-          <a href="https://www.twitter.com/gdsc_crce">
+          <a href="https://www.twitter.com/gdsc_crce" className="text-white">
             <FaTwitter className="inline-block text-4xl" />
           </a>
-          <a href="https://gdsc.community.dev/fr-conceicao-rodrigues-college-of-engineering-mumbai/">
+          <a
+            href="https://gdsc.community.dev/fr-conceicao-rodrigues-college-of-engineering-mumbai/"
+            className="text-white"
+          >
             <FaGoogle className="inline-block text-4xl" />
           </a>
         </div>
