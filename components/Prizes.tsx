@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { Bungee } from 'next/font/google'
 import Image from 'next/image'
 import PrizesImg from '@public/assets/tracks.png'
@@ -16,14 +15,7 @@ const bungee = Bungee({
 export const Prizes = () => {
   return (
     <section
-      className="flex flex-col items-center justify-center py-5"
-      style={{
-        backgroundImage:
-          'conic-gradient(#8F8F8F 90deg, #7F7F7F 90deg 180deg, #8F8F8F 180deg 270deg, #7F7F7F 270deg)',
-        backgroundRepeat: 'repeat',
-        backgroundSize: '60px 60px',
-        backgroundPosition: 'top left',
-      }}
+      className="flex flex-col items-center justify-center py-5  bg-[url('/assets/img/mine.jpg')] bg-cover bg-bottom bg-no-repeat"
     >
       {/* <div className="mx-auto max-w-md py-4 text-center">
         <Image

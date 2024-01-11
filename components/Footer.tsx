@@ -28,7 +28,7 @@ const Footer = () => {
 
           <div className="mt-3 text-2xl md:text-3xl">
             <p className={bungee.className + ' text-white'}>
-              The Callaborative Hackathon{' '}
+              The Collaborative Hackathon{' '}
               <a
                 className={
                   bungee.className +
