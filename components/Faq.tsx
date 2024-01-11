@@ -13,7 +13,8 @@ export const Faq = () => {
   return (
     <>
       <section
-        className="bg-conic-gradient py-5 text-gray-900"
+        className="bg-conic-gradient py-5 text-gray-900 "
+        id="FAQ"
         style={{
           backgroundImage:
             'conic-gradient(#8F8F8F 90deg, #7F7F7F 90deg 180deg, #8F8F8F 180deg 270deg, #7F7F7F 270deg)',
@@ -50,7 +51,11 @@ export const Faq = () => {
                 </summary>
 
                 <span>
-                  Hacking is a creative way to solve a problem, and hackathons are innovation marathons where students from around the country who have an interest in technology come together to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere.
+                  Hacking is a creative way to solve a problem, and hackathons
+                  are innovation marathons where students from around the
+                  country who have an interest in technology come together to
+                  learn, build & share their creations over the course of a
+                  weekend in a relaxed and welcoming atmosphere.
                 </span>
               </details>
               <details className="mb-4">
@@ -58,9 +63,7 @@ export const Faq = () => {
                   How many people per team?
                 </summary>
 
-                <span>
-                  Teams can range anywhere from 2-4 people.
-                </span>
+                <span>Teams can range anywhere from 2-4 people.</span>
               </details>
               <details className="mb-4">
                 <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
@@ -68,14 +71,17 @@ export const Faq = () => {
                 </summary>
 
                 <span>
-                Bit N Build is free for all hackers! We provide our hackers with tools, swags, and prizes without any cost through our generous sponsors.
+                  Bit N Build is free for all hackers! We provide our hackers
+                  with tools, swags, and prizes without any cost through our
+                  generous sponsors.
                 </span>
               </details>
             </div>
             <div className="w-full px-4 py-2 lg:w-1/2">
               <details className="mb-4">
-                <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold"> 
-                  Who can participate? Are There any prerequisites or required skills?
+                <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
+                  Who can participate? Are There any prerequisites or required
+                  skills?
                 </summary>
 
                 <span className="px-4 py-2">
@@ -90,7 +96,8 @@ export const Faq = () => {
                 </summary>
 
                 <span className="px-4 py-2">
-                  Yes, delicious food and beverages will be provided throughout the event.
+                  Yes, delicious food and beverages will be provided throughout
+                  the event.
                 </span>
               </details>
               <details className="mb-4">
@@ -99,7 +106,8 @@ export const Faq = () => {
                 </summary>
 
                 <span className="px-4 py-2">
-                  The judge panel composition will be announced closer to the date of the hackathon.
+                  The judge panel composition will be announced closer to the
+                  date of the hackathon.
                 </span>
               </details>
             </div>

@@ -82,7 +82,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#designers"
+                href="#footer"
                 className="brand-font font-bold text-green-600 hover:text-green-800 hover:underline"
               >
                 Contact Us{' '}
@@ -90,7 +90,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#contact"
+                href="#FAQ"
                 className="brand-font font-bold text-green-600 hover:text-green-800 hover:underline"
               >
                 FAQ

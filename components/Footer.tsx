@@ -1,5 +1,6 @@
 import React from 'react'
 import { Bungee } from 'next/font/google'
+import Link from 'next/link'
 
 // Define the Bungee font
 const bungee = Bungee({
@@ -10,7 +11,10 @@ const bungee = Bungee({
 
 const Footer = () => {
   return (
-    <div className="min-h-96 w-full bg-[url('/assets/resize.webp')] bg-cover bg-no-repeat pt-12">
+    <div
+      className="min-h-96 w-full bg-[url('/assets/resize.webp')] bg-cover bg-no-repeat pt-12"
+      id="footer"
+    >
       <footer className="mx-auto w-full  px-4 py-10 sm:px-6 lg:px-8">
         <div className="text-center">
           <div>
@@ -48,7 +52,8 @@ const Footer = () => {
           <div className="mt-3 space-x-2">
             <a
               className="inline-flex h-10 w-10 items-center justify-center rounded-full text-center text-white transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-200"
-              href="#"
+              href="https://gdsc.community.dev/fr-conceicao-rodrigues-college-of-engineering-mumbai/
+              "
             >
               <svg
                 className="h-6 w-6 flex-shrink-0" // Increase the height and width here
@@ -63,7 +68,8 @@ const Footer = () => {
             </a>
             <a
               className="inline-flex h-10 w-10 items-center justify-center rounded-full text-center text-white transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-200"
-              href="#"
+              href="https://www.twitter.com/gdsc_crce
+              "
             >
               <svg
                 className="h-6 w-6 flex-shrink-0" // Increase the height and width here
@@ -78,7 +84,8 @@ const Footer = () => {
             </a>
             <a
               className="inline-flex h-10 w-10 items-center justify-center rounded-full text-center text-white transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-200"
-              href="#"
+              href="https://github.com/CRCE-GDSC
+              "
             >
               <svg
                 className="h-6 w-6 flex-shrink-0" // Increase the height and width here
@@ -92,18 +99,20 @@ const Footer = () => {
               </svg>
             </a>
             <a
-              className="inline-flex h-10 w-10 items-center justify-center rounded-full text-center text-white transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-200"
-              href="#"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-full text-center font-bold text-white transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:text-white dark:hover:bg-gray-800 dark:hover:text-gray-200"
+              href="https://www.instagram.com/https://www.instagram.com/gdsc_crce/"
             >
               <svg
-                className="h-6 w-6 flex-shrink-0" // Increase the height and width here
                 xmlns="http://www.w3.org/2000/svg"
-                width="24" // Increase the width here
-                height="24" // Increase the height here
-                fill="currentColor"
-                viewBox="0 0 16 16"
+                width="24"
+                height="24"
+                fill="white"
+                viewBox="0 0 24 24"
+                fontWeight={300}
               >
-                <path d="M3.362 10.11c0 .926-.756 1.681-1.681 1.681S0 11.036 0 10.111C0 9.186.756 8.43 1.68 8.43h1.682v1.68zm.846 0c0-.924.756-1.68 1.681-1.68s1.681.756 1.681 1.68v4.21c0 .924-.756 1.68-1.68 1.68a1.685 1.685 0 0 1-1.682-1.68v-4.21zM5.89 3.362c-.926 0-1.682-.756-1.682-1.681S4.964 0 5.89 0s1.68.756 1.68 1.68v1.682H5.89zm0 .846c.924 0 1.68.756 1.68 1.681S6.814 7.57 5.89 7.57H1.68C.757 7.57 0 6.814 0 5.89c0-.926.756-1.682 1.68-1.682h4.21zm6.749 1.682c0-.926.755-1.682 1.68-1.682.925 0 1.681.756 1.681 1.681s-.756 1.681-1.68 1.681h-1.681V5.89zm-.848 0c0 .924-.755 1.68-1.68 1.68A1.685 1.685 0 0 1 8.43 5.89V1.68C8.43.757 9.186 0 10.11 0c.926 0 1.681.756 1.681 1.68v4.21zm-1.681 6.748c.926 0 1.682.756 1.682 1.681S11.036 16 10.11 16s-1.681-.756-1.681-1.68v-1.682h1.68zm0-.847c-.924 0-1.68-.755-1.68-1.68 0-.925.756-1.681 1.68-1.681h4.21c.924 0 1.68.756 1.68 1.68 0 .926-.756 1.681-1.68 1.681h-4.21z" />
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.436.336 3.018 1.675.627 1.43.67 2.605.67 4.192v8.17c0 1.586-.043 2.762-.67 4.192-.582 1.34-1.652 1.613-3.018 1.675-1.267.058-1.646.07-4.85.07s-3.582-.012-4.85-.07c-1.366-.062-2.436-.335-3.018-1.675-.627-1.43-.67-2.606-.67-4.192v-8.17c0-1.587.043-2.763.67-4.192.582-1.34 1.652-1.613 3.018-1.675 1.268-.058 1.647-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-1.683.077-2.882.38-3.897 1.395-1.016 1.016-1.318 2.214-1.395 3.897-.058 1.28-.072 1.689-.072 4.947s.014 3.668.072 4.947c.077 1.683.38 2.881 1.395 3.897 1.015 1.016 2.214 1.318 3.897 1.395 1.28.058 1.689.072 4.947.072s3.668-.014 4.947-.072c1.683-.077 2.882-.38 3.897-1.395 1.016-1.016 1.318-2.214 1.395-3.897.058-1.279.072-1.688.072-4.947s-.014-3.667-.072-4.947c-.077-1.683-.38-2.881-1.395-3.897-1.015-1.015-2.214-1.318-3.897-1.395-1.28-.058-1.688-.072-4.947-.072z" />
+                <path d="M12 7.384c-2.549 0-4.616 2.067-4.616 4.616s2.067 4.616 4.616 4.616 4.616-2.067 4.616-4.616-2.067-4.616-4.616-4.616zm0 7.616c-1.655 0-3-1.345-3-3s1.345-3 3-3 3 1.345 3 3-1.345 3-3 3z" />
+                <circle cx="18.384" cy="5.617" r="1.231" />
               </svg>
             </a>
           </div>
