@@ -1,5 +1,5 @@
 .cards-right {
-  @apply bg-[url('/assets/ob-tex.jpg')];
+  @apply bg-[url('/assets/netherack.jpg')];
 }
 .cards-left {
   @apply bg-[url('/assets/ob-tex.jpg')];
