@@ -2,7 +2,7 @@ import React from 'react'
 import './Timeline.css'
 
 const Timeline2 = () => (
-  <div className="flex h-full items-center justify-center bg-gray-800 bg-[url('/assets/ob.gif')] bg-cover bg-repeat">
+  <div className="flex h-full items-center justify-center bg-gray-800 bg-[url('/assets/ob.gif')] bg-contain bg-repeat">
     <div className="wrap relative h-full overflow-hidden p-10">
       <div
         className="border-2-2 absolute h-full border border-gray-700 border-opacity-20"
