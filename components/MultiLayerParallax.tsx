@@ -44,7 +44,7 @@ export default function MultiLayerParallax() {
       <div
         className="absolute inset-0 z-40 w-full bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url(/assets/site1.png)`,
+          backgroundImage: `url(/assets/site2.png)`,
           backgroundPosition: 'top',
           pointerEvents: 'none',
         }}
