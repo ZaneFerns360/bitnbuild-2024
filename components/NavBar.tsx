@@ -20,12 +20,12 @@ const NavBar = () => {
   }
 
   return (
-    <header className="bg-image sticky top-0 z-50 shadow-md lg:shadow-none">
+    <header className={`bg-image sticky top-0 z-50 shadow-md lg:shadow-none ${isNavVisible ? 'glass' : ''}`}>
       <div className="container mx-auto px-4 py-4">
-        <nav className="flex flex-col items-center justify-between lg:flex-row">
+        <nav className="flex flex-col items-center justify-between lg:flex-row ">
           {/* Logo and Hamburger for Small Screens */}
           <div className="flex w-full items-center justify-between lg:w-auto ">
-            <div className="max-md:hidden">
+            <div className="max-md:hidden ">
               {' '}
               <Image
                 src={Logo}
@@ -62,45 +62,47 @@ const NavBar = () => {
           </div>
 
           {/* Navigation Links */}
-          <ul
-            className={`mt-4 flex flex-col space-y-4 text-center lg:mt-0 lg:flex lg:flex-row lg:space-x-6 lg:space-y-0 ${
-              isNavVisible ? 'm-0 w-full bg-white p-0' : 'hidden'
-            }`}
-            id="nav-links"
-          >
-            <li>
-              <a
-                href="#home"
-                className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#about"
-                className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
-              >
-                About{' '}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#footer"
-                className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
-              >
-                Contact Us{' '}
-              </a>
-            </li>
-            <li>
-              <a
-                href="#FAQ"
-                className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
-              >
-                FAQ
-              </a>
-            </li>
-          </ul>
+          <div className=''>
+            <ul
+              className={`mt-4 flex flex-col space-y-4 text-center lg:mt-0 lg:flex lg:flex-row lg:space-x-6 lg:space-y-0 ${
+                isNavVisible ? 'm-0 w-full p-0' : 'hidden'
+              }`}
+              id="nav-links"
+            >
+              <li>
+                <a
+                  href="#home"
+                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
+                >
+                  About{' '}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#footer"
+                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
+                >
+                  Contact Us{' '}
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#FAQ"
+                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
+                >
+                  FAQ
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
