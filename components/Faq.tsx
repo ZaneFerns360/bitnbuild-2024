@@ -13,7 +13,7 @@ export const Faq = () => {
   return (
     <>
       <section
-        className="bg-conic-gradient bg-[url('/assets/img/nether-portal.jpg')] bg-cover bg-bottom bg-no-repeat py-5 text-gray-900 "
+        className="bg-conic-gradient bg-[url('/assets/img/nether-portal.jpg')] bg-cover bg-bottom bg-no-repeat py-5 text-gray-900 md:h-screen"
         id="FAQ"
       >
         <div className="mx-auto max-w-sm py-4 text-center">

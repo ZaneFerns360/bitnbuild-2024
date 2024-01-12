@@ -45,7 +45,7 @@ const NavBar = () => {
               onClick={handleHamburgerClick}
             >
               <svg
-                className="h-6 w-6 text-green-600"
+                className="h-6 w-6 text-green-700"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -71,7 +71,7 @@ const NavBar = () => {
             <li>
               <a
                 href="#home"
-                className="brand-font font-bold text-green-600 hover:text-green-800 hover:underline"
+                className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
               >
                 Home
               </a>
@@ -79,7 +79,7 @@ const NavBar = () => {
             <li>
               <a
                 href="#about"
-                className="brand-font font-bold text-green-600 hover:text-green-800 hover:underline"
+                className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
               >
                 About{' '}
               </a>
@@ -87,7 +87,7 @@ const NavBar = () => {
             <li>
               <a
                 href="#footer"
-                className="brand-font font-bold text-green-600 hover:text-green-800 hover:underline"
+                className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
               >
                 Contact Us{' '}
               </a>
@@ -95,7 +95,7 @@ const NavBar = () => {
             <li>
               <a
                 href="#FAQ"
-                className="brand-font font-bold text-green-600 hover:text-green-800 hover:underline"
+                className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
               >
                 FAQ
               </a>
