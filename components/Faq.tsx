@@ -13,15 +13,8 @@ export const Faq = () => {
   return (
     <>
       <section
-        className="bg-conic-gradient py-5 text-gray-900 "
+        className="bg-conic-gradient py-5 text-gray-900 bg-[url('/assets/faqbg.jpg')] bg-cover bg-bottom bg-no-repeat "
         id="FAQ"
-        style={{
-          backgroundImage:
-            'conic-gradient(#8F8F8F 90deg, #7F7F7F 90deg 180deg, #8F8F8F 180deg 270deg, #7F7F7F 270deg)',
-          backgroundRepeat: 'repeat',
-          backgroundSize: '60px 60px',
-          backgroundPosition: 'top left',
-        }}
       >
         <div className="mx-auto max-w-sm py-4 text-center">
           <Image
