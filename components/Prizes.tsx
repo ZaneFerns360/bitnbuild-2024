@@ -35,7 +35,7 @@ export const Prizes = () => {
       </div>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-0">
         {/* 1st place content */}
-        <div className="px-5 text-center md:mt-8 ">
+        <div className="px-5 text-center max-md:hidden md:mt-8">
           <Image
             className=""
             src={Prizes2}
@@ -72,6 +72,26 @@ export const Prizes = () => {
               }
             >
               ₹ 50,000
+            </p>
+          </div>
+        </div>
+
+        <div className="px-5 text-center md:mt-8 md:hidden">
+          <Image
+            className=""
+            src={Prizes2}
+            width={400}
+            height={400}
+            alt="prize1"
+          />
+          <div className="leading-relaxed">
+            <p
+              className={
+                bungee.className +
+                ' text-1xl my-3 mt-2 text-yellow-500 sm:text-3xl'
+              }
+            >
+              ₹ 25,000
             </p>
           </div>
         </div>

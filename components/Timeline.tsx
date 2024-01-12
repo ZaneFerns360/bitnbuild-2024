@@ -22,8 +22,10 @@ const Timeline = () => (
           <div className="z-20 order-1 flex h-8 w-8 items-center rounded-full bg-gray-800 shadow-xl">
             <h1 className="mx-auto text-lg font-semibold text-white">1</h1>
           </div>
-          <div className="cards-right order-1 w-7/12 rounded-lg bg-gray-400 px-6 py-4 shadow-xl">
-            <h3 className="mb-3 text-xl font-bold text-white">January 28th-February 5th</h3>
+          <div className="cards-right order-1 w-auto rounded-lg bg-gray-400 px-6 py-4 shadow-xl">
+            <h3 className="mb-3 text-xl font-bold text-white">
+              January 28th-February 5th
+            </h3>
             <p className="text-sm leading-snug tracking-wide text-white ">
               Registration for Internal State Hackathon.
             </p>
@@ -35,7 +37,7 @@ const Timeline = () => (
           <div className="z-20 order-1 flex h-8 w-8 items-center rounded-full bg-gray-800 shadow-xl">
             <h1 className="mx-auto text-lg font-semibold text-white">2</h1>
           </div>
-          <div className="cards-right order-1 w-7/12 rounded-lg bg-red-400 px-6 py-4 shadow-xl">
+          <div className="cards-right order-1 w-auto rounded-lg bg-red-400 px-6 py-4 shadow-xl">
             <h3 className="mb-3 text-xl font-bold text-white">February 10th</h3>
             <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
               Hackathon Begins.
@@ -48,7 +50,7 @@ const Timeline = () => (
           <div className="z-20 order-1 flex h-8 w-8 items-center rounded-full bg-gray-800 shadow-xl">
             <h1 className="mx-auto text-lg font-semibold text-white">3</h1>
           </div>
-          <div className="cards-right order-1 w-7/12 rounded-lg bg-gray-400 px-6 py-4 shadow-xl">
+          <div className="cards-right order-1 w-auto rounded-lg bg-gray-400 px-6 py-4 shadow-xl">
             <h3 className="mb-3 text-xl font-bold text-white">February 10th</h3>
             <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
               Internal Hackathon Results.

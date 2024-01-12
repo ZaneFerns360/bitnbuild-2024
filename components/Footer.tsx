@@ -21,7 +21,7 @@ const Footer = () => {
             <a
               className={
                 bungee.className +
-                ' flex-none text-4xl font-semibold text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600 '
+                ' border-text flex-none text-4xl font-semibold text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
               }
               href="#"
               aria-label="Brand"
@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
 
           <div className="mt-3 text-2xl md:text-3xl">
-            <p className={bungee.className + ' text-white'}>
+            <p className={bungee.className + ' border-text text-white'}>
               The Collaborative Hackathon{' '}
               <a
                 className={
@@ -44,14 +44,18 @@ const Footer = () => {
               </a>{' '}
               family.
             </p>
-            <p className={bungee.className + ' text-white'}>
+            <p className={bungee.className + ' border-text text-white'}>
               © GDSC Fr.Crce. 2024. All rights reserved.
             </p>
           </div>
         </div>
 
         <div className="mr-12 mt-3 space-x-2 text-right">
-          <h2 className={bungee.className + ' mb-2 text-2xl text-white'}>
+          <h2
+            className={
+              bungee.className + ' border-text mb-2 text-2xl text-white'
+            }
+          >
             Contact Us
           </h2>
           <a href="https://www.instagram.com/gdsc_crce/" className="text-white">
