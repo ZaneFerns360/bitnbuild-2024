@@ -15,7 +15,7 @@ const Timeline2 = () => (
           <h1 className="mx-auto text-lg font-semibold text-white">1</h1>
         </div>
         <div className="cards-left order-1 w-7/12 rounded-lg bg-gray-400 px-6 py-4 shadow-xl">
-          <h3 className="mb-3 text-xl font-bold text-white">February 23rd</h3>
+          <h3 className="mb-3 text-xl font-bold text-white">February 24th</h3>
           <p className="text-sm leading-snug tracking-wide text-white ">
             Teams Arrive.
           </p>
@@ -29,7 +29,7 @@ const Timeline2 = () => (
         </div>
         <div className="cards-left order-1 w-7/12 rounded-lg bg-red-400 px-6 py-4 shadow-xl">
           <h3 className="mb-3 text-xl font-bold text-white">
-            February 23rd - February 24th
+            February 24th - February 25th
           </h3>
           <p className="text-sm font-medium leading-snug tracking-wide text-white">
             Grand Finale at Fr. Conceicao Rodrigues College of Engineering.
@@ -43,7 +43,7 @@ const Timeline2 = () => (
           <h1 className="mx-auto text-lg font-semibold text-white">3</h1>
         </div>
         <div className="cards-left order-1 w-7/12 rounded-lg bg-gray-400 px-6 py-4 shadow-xl">
-          <h3 className="mb-3 text-xl font-bold text-white">February 24th</h3>
+          <h3 className="mb-3 text-xl font-bold text-white">February 25th</h3>
           <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
             Final Results of BitNBuild Hackathon.
           </p>

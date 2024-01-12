@@ -27,7 +27,7 @@ const Timeline = () => (
             <h1 className="mx-auto text-lg font-semibold text-white">1</h1>
           </div>
           <div className="cards-right order-1 w-7/12 rounded-lg bg-gray-400 px-6 py-4 shadow-xl">
-            <h3 className="mb-3 text-xl font-bold text-white">January 5th</h3>
+            <h3 className="mb-3 text-xl font-bold text-white">January 28th-February 5th</h3>
             <p className="text-sm leading-snug tracking-wide text-white ">
               Registration for Internal State Hackathon.
             </p>
