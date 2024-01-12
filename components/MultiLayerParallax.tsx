@@ -41,14 +41,15 @@ export default function MultiLayerParallax() {
           y: backgroundY,
         }}
       />
-      <div
-        className="absolute inset-0 z-30 w-full bg-cover bg-no-repeat"
-        style={{
-          backgroundImage: `url(/assets/site1.png)`,
-          backgroundPosition: 'top',
-          pointerEvents: 'none', // Add this line
-        }}
-      >
+      <div className="absolute inset-0 z-40 w-full">
+        <div
+          className="absolute inset-0 bg-cover bg-no-repeat"
+          style={{
+            backgroundImage: `url(/assets/site1.png)`,
+            backgroundPosition: 'top',
+            pointerEvents: 'none',
+          }}
+        ></div>
         <NavBar />
       </div>
     </div>
