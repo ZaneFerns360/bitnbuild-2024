@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import React, { useRef } from 'react'
 import Link from 'next/link'
 import '@components/button.css'
+import NavBar from './NavBar'
 
 export default function MultiLayerParallax() {
   const ref = useRef(null)
@@ -21,7 +22,7 @@ export default function MultiLayerParallax() {
     >
       <motion.div
         style={{ y: textY }}
-        className="absolute inset-0 z-30"
+        className="absolute inset-0 z-30 pt-8 "
         transition={{ type: 'spring', stiffness: 100, damping: 3000 }}
       >
         <div className="inset-0 z-20 flex flex-col items-center justify-center space-y-5 p-4">
@@ -47,7 +48,9 @@ export default function MultiLayerParallax() {
           backgroundPosition: 'top',
           pointerEvents: 'none', // Add this line
         }}
-      />
+      >
+        <NavBar />
+      </div>
     </div>
   )
 }

@@ -4,10 +4,6 @@ import './Timeline.css'
 const Timeline2 = () => (
   <div className="flex h-full items-center justify-center bg-gray-800 bg-[url('/assets/ob.gif')] bg-contain bg-repeat">
     <div className="wrap relative h-full overflow-hidden p-10">
-      <div
-        className="border-2-2 absolute h-full border border-gray-700 border-opacity-20"
-        style={{ left: '50%' }}
-      ></div>
       {/* right timeline */}
       <div className="right-timeline mb-8 flex w-full items-center justify-between">
         <div className="order-1 w-5/12"></div>

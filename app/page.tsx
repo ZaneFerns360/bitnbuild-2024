@@ -13,7 +13,7 @@ export default function Home() {
     <div className="w-full scroll-smooth">
       <div className="h-screen bg-no-repeat">
         <div className="absolute inset-0 z-30 h-screen  w-full bg-cover bg-no-repeat">
-          <NavBar />
+          {/* <NavBar /> */}
           <MultiLayerParallax />
         </div>{' '}
       </div>
