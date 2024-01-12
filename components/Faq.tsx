@@ -28,10 +28,10 @@ export const Faq = () => {
 
         <div className="container mx-auto px-5 py-2 md:py-10">
           <div className="my-10 text-center">
-            <h1 className="title-font mb-4 text-center text-2xl font-semibold text-white sm:text-3xl">
+            <h1 className="title-font border-text mb-4 text-center text-2xl font-semibold text-red-700 sm:text-4xl ">
               Some common questions were often asked
             </h1>
-            <p className="mx-auto text-base leading-relaxed text-white lg:w-3/4 xl:w-2/4">
+            <p className="border-text mx-auto leading-relaxed text-white sm:text-2xl lg:w-3/4 xl:w-2/4">
               The most common questions about how our hackathon will be
               conducted
             </p>

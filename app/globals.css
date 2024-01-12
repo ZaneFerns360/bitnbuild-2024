@@ -26,7 +26,7 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.btn{
+.btn {
   font-size: 18px;
   background-color: #008542;
   color: #fff;
@@ -61,8 +61,17 @@ body {
     --border-offset: 10px;
     --border-offset2: 20px;
 
-   :html {
+    :html {
       @apply scroll-smooth;
     }
   }
+}
+
+.border-text {
+  color: white;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
