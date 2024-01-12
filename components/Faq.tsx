@@ -13,7 +13,7 @@ export const Faq = () => {
   return (
     <>
       <section
-        className="bg-[url('/assets/img/nether-portal.jpg')] bg-cover bg-bottom bg-no-repeat py-5 text-gray-900 md:h-screen"
+        className="bg-[url('/assets/img/nether-portal.jpg')] bg-cover bg-bottom bg-no-repeat py-3 mg:py-5 text-gray-900 md:h-screen"
         id="FAQ"
       >
         <div className="mx-auto max-w-sm py-4 text-center">
@@ -39,11 +39,11 @@ export const Faq = () => {
           <div className="-mx-2 flex flex-wrap sm:mx-auto sm:mb-2 lg:w-4/5">
             <div className="w-full px-4 py-2 lg:w-1/2">
               <details className="mb-4">
-                <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
+                <summary className="rounded-md  bg-gray-200 px-4 py-3 font-semibold">
                   What is a hackathon?
                 </summary>
 
-                <span className="block rounded-md bg-white px-4 py-2">
+                <span className="block rounded-md bg-white px-4 py-3">
                   Hacking is a creative way to solve a problem, and hackathons
                   are innovation marathons where students from around the
                   country who have an interest in technology come together to
@@ -52,20 +52,20 @@ export const Faq = () => {
                 </span>
               </details>
               <details className="mb-4">
-                <summary className="rounded-md bg-gray-200 px-4 py-2 font-semibold">
+                <summary className="rounded-md bg-gray-200 px-4 py-3 font-semibold">
                   How many people per team?
                 </summary>
 
-                <span className="block rounded-md bg-white px-4 py-2">
+                <span className="block rounded-md bg-white px-4 py-3">
                   Teams can range anywhere from 2-4 people.
                 </span>
               </details>
               <details className="mb-4">
-                <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
+                <summary className="rounded-md  bg-gray-200 px-4 py-3 font-semibold">
                   What does it cost?
                 </summary>
 
-                <span className="block rounded-md bg-white px-4 py-2">
+                <span className="block rounded-md bg-white px-4 py-3">
                   Bit N Build is free for all hackers! We provide our hackers
                   with tools, swags, and prizes without any cost through our
                   generous sponsors.
@@ -74,30 +74,30 @@ export const Faq = () => {
             </div>
             <div className="w-full px-4 py-2 lg:w-1/2">
               <details className="mb-4">
-                <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
+                <summary className="rounded-md  bg-gray-200 px-4 py-3 font-semibold">
                   Who can participate? Are there any required skills?
                 </summary>
 
-                <span className="block rounded-md bg-white px-4 py-2">
-                  Laboris qui labore cillum
+                <span className="block rounded-md bg-white px-4 py-3">
+                  Anyone is welcome to participate in this event. While experience coding and programming is a huge plus, teams will also need people with strong presentation skills and brilliant ideas.
                 </span>
               </details>
               <details className="mb-4">
-                <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
+                <summary className="rounded-md  bg-gray-200 px-4 py-3 font-semibold">
                   Will there be food?
                 </summary>
 
-                <span className="block rounded-md bg-white px-4 py-2">
+                <span className="block rounded-md bg-white px-4 py-3">
                   Yes, delicious food and beverages will be provided throughout
                   the event.
                 </span>
               </details>
               <details className="mb-4">
-                <summary className="rounded-md  bg-gray-200 px-4 py-2 font-semibold">
+                <summary className="rounded-md  bg-gray-200 px-4 py-3 font-semibold">
                   Who will be judging?
                 </summary>
 
-                <span className=" block rounded-md bg-white px-4 py-2">
+                <span className=" block rounded-md bg-white px-4 py-3">
                   The judge panel composition will be announced closer to the
                   date of the hackathon.
                 </span>
