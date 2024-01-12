@@ -22,7 +22,7 @@ export default function MultiLayerParallax() {
     >
       <motion.div
         style={{ y: textY }}
-        className="absolute inset-0 z-30 pt-8 "
+        className="absolute inset-0 z-40 pt-8 "
         transition={{ type: 'spring', stiffness: 100, damping: 3000 }}
       >
         <div className="inset-0 z-20 flex flex-col items-center justify-center space-y-5 p-4">
@@ -41,16 +41,18 @@ export default function MultiLayerParallax() {
           y: backgroundY,
         }}
       />
-      <div className="absolute inset-0 z-40 w-full">
-        <div
-          className="absolute inset-0 bg-cover bg-no-repeat"
-          style={{
-            backgroundImage: `url(/assets/site1.png)`,
-            backgroundPosition: 'top',
-            pointerEvents: 'none',
-          }}
-        ></div>
-        <NavBar />
+      <div
+        className="absolute inset-0 z-40 w-full bg-cover bg-no-repeat"
+        style={{
+          backgroundImage: `url(/assets/site1.png)`,
+          backgroundPosition: 'top',
+          pointerEvents: 'none', // Add this line
+        }}
+      >
+        <div className="pointer-events-auto">
+          {' '}
+          <NavBar />
+        </div>
       </div>
     </div>
   )
