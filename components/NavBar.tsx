@@ -72,7 +72,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="#home"
-                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
+                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline border-text"
                 >
                   Home
                 </a>
@@ -80,7 +80,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="#about"
-                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
+                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline border-text"
                 >
                   About{' '}
                 </a>
@@ -88,7 +88,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="#footer"
-                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
+                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline border-text"
                 >
                   Contact Us{' '}
                 </a>
@@ -96,7 +96,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="#FAQ"
-                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline"
+                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline border-text"
                 >
                   FAQ
                 </a>
