@@ -20,7 +20,9 @@ const NavBar = () => {
   }
 
   return (
-    <header className={`bg-image sticky top-0 z-50 shadow-md lg:shadow-none ${isNavVisible ? 'glass' : ''}`}>
+    <header
+      className={`bg-image sticky top-0 z-50  ${isNavVisible ? 'glass' : ''}`}
+    >
       <div className="container mx-auto px-4 py-4">
         <nav className="flex flex-col items-center justify-between lg:flex-row ">
           {/* Logo and Hamburger for Small Screens */}
@@ -62,7 +64,7 @@ const NavBar = () => {
           </div>
 
           {/* Navigation Links */}
-          <div className=''>
+          <div className="">
             <ul
               className={`mt-4 flex flex-col space-y-4 text-center lg:mt-0 lg:flex lg:flex-row lg:space-x-6 lg:space-y-0 ${
                 isNavVisible ? 'm-0 w-full p-0' : 'hidden'
@@ -72,7 +74,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="#home"
-                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline border-text"
+                  className="brand-font border-text font-bold text-green-700 hover:text-green-800 hover:underline"
                 >
                   Home
                 </a>
@@ -80,7 +82,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="#about"
-                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline border-text"
+                  className="brand-font border-text font-bold text-green-700 hover:text-green-800 hover:underline"
                 >
                   About{' '}
                 </a>
@@ -88,7 +90,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="#footer"
-                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline border-text"
+                  className="brand-font border-text font-bold text-green-700 hover:text-green-800 hover:underline"
                 >
                   Contact Us{' '}
                 </a>
@@ -96,7 +98,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="#FAQ"
-                  className="brand-font font-bold text-green-700 hover:text-green-800 hover:underline border-text"
+                  className="brand-font border-text font-bold text-green-700 hover:text-green-800 hover:underline"
                 >
                   FAQ
                 </a>

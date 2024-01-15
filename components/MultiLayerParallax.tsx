@@ -25,8 +25,14 @@ export default function MultiLayerParallax() {
         className="absolute inset-0 z-40 pt-8 "
         transition={{ type: 'spring', stiffness: 50, damping: 5000 }}
       >
-        <div className="inset-0 z-20 flex flex-col items-center justify-center space-y-5 p-4">
-          <Image alt="GG" width={500} height={500} src="/assets/mc.png"></Image>
+        <div className="inset-0 z-20 flex flex-col items-center justify-center space-y-5 p-4 pt-8 md:pt-5">
+          <Image
+            alt="GG"
+            width={500}
+            height={500}
+            src="/assets/mc.png"
+            priority={true}
+          ></Image>
           <button className="btn">Sign Up</button>
         </div>
       </motion.div>
