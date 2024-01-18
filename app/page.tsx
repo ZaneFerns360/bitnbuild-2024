@@ -20,9 +20,9 @@ export default function Home() {
 
       <div className="w-full bg-blue-200">
         <About />
+        <Prizes />
         <Timeline />
         <Timeline2 />
-        <Prizes />
         <Faq />
         <Footer />
       </div>
