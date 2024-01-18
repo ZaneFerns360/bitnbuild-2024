@@ -24,11 +24,11 @@ export const Prizes = () => {
           alt="Prizes"
         />
       </div>
-        <div className="px-5 text-center max-md:hidden md:mt-8">
+        <div className="px-5 text-center max-md:hidden md:mt-0">
           <Image
-            className=""
+            className="mx-auto"
             src={Prizes1}
-            width={500}
+            width={450}
             height={200}
             alt="prize1"
           />
