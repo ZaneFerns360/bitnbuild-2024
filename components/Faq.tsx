@@ -43,7 +43,7 @@ const faqItems = [
 export const Faq = () => {
   return (
     <>
-      <section className="py-3 mg:py-5 text-gray-900 md:h-screen" id="FAQ">
+      <section className="py-3 mg:py-5 text-gray-900" id="FAQ">
         <div className="mx-auto max-w-sm py-4 text-center">
           <Image
             className="mx-auto text-center"
@@ -63,7 +63,7 @@ export const Faq = () => {
               The most common questions about how our hackathon will be conducted
             </p>
           </div>
-          <div className="-mx-2 flex flex-wrap sm:mx-auto sm:mb-2 lg:w-4/5">
+          <div className="-mx-2 flex flex-wrap sm:mb-2 ">
             {faqItems.map((item, index) => (
               <div key={index} className="w-full px-4 py-2 lg:w-1/2">
                 <details className="mb-4">

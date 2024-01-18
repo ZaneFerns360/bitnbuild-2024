@@ -1,16 +1,15 @@
-import React from 'react'
-import { Bungee } from 'next/font/google'
-import Image from 'next/image'
-import PrizesImg from '@public/assets/tracks.png'
-import Prizes1 from '@public/assets/prizes/podium.png'
-import Prizes2 from '@public/assets/prizes/2ndPrizes.png'
-import Prizes3 from '@public/assets/prizes/3rdPrizes.png'
+import React from 'react';
+import { Bungee } from 'next/font/google';
+import Image from 'next/image';
+import Prizes1 from '@public/assets/prizes/podium.png';
+import Grass from '@public/assets/blocks.png'
+import Grass2 from '@public/assets/blocks2.png'
 
 const bungee = Bungee({
   weight: '400',
   subsets: ['latin'],
   display: 'swap',
-})
+});
 
 export const Prizes = () => {
   return (
@@ -24,7 +23,19 @@ export const Prizes = () => {
           alt="Prizes"
         />
       </div>
-        <div className="px-5 text-center max-md:hidden md:mt-0">
+
+      {/* Static Grid of Prize1 Images */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-5 text-center md:mt-0">
+        <div>
+          <Image
+            className="mx-auto hidden md:inline opacity-95"
+            src={Grass}
+            width={250}
+            height={200}
+            alt="prize1"
+          />
+        </div>
+        <div>
           <Image
             className="mx-auto"
             src={Prizes1}
@@ -33,32 +44,43 @@ export const Prizes = () => {
             alt="prize1"
           />
           <div className="leading-relaxed flex gap-8 items-center justify-center">
-            <p
-              className={
-                bungee.className +
-                ' text-xl my-3 mt-3 text-yellow-700 sm:text-3xl'
-              }
-            >
-              ₹ 25,000
-            </p>
-            <p
-              className={
-                bungee.className +
-                ' text-xl my-3 mt-2 text-yellow-700 sm:text-3xl'
-              }
-            >
-              ₹ 50,000
-            </p>
-            <p
-              className={
-                bungee.className +
-                ' text-1xl my-3 mt-3 text-yellow-700 sm:text-3xl'
-              }
-            >
-              ₹ 10,000
-            </p>
-          </div>
+        {/* Prize Amounts */}
+        <p
+          className={
+            bungee.className +
+            ' text-xl my-3 mt-10 text-yellow-700 sm:text-3xl'
+          }
+        >
+          ₹ 25,000
+        </p>
+        <p
+          className={
+            bungee.className +
+            ' text-xl my-3 mt-0 text-yellow-700 sm:text-3xl'
+          }
+        >
+          ₹ 50,000
+        </p>
+        <p
+          className={
+            bungee.className +
+            ' text-1xl my-3 mt-10 text-yellow-700 sm:text-3xl'
+          }
+        >
+          ₹ 10,000
+        </p>
+      </div>
         </div>
+        <div>
+          <Image
+            className="mx-auto hidden md:inline opacity-95"
+            src={Grass2}
+            width={250}
+            height={200}
+            alt="prize1"
+          />
+        </div>
+      </div>
     </section>
-  )
-}
+  );
+};
