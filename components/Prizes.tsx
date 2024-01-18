@@ -14,7 +14,7 @@ const bungee = Bungee({
 
 export const Prizes = () => {
   return (
-    <section className="flex flex-col items-center justify-center bg-[url('/assets/img/mine.jpg')]  bg-cover bg-top bg-no-repeat">
+    <section className="flex flex-col items-center justify-center">
       <div className="mx-auto max-w-sm py-5 text-center">
         <Image
           className="mx-auto text-center"
@@ -30,8 +30,8 @@ export const Prizes = () => {
           <Image
             className=""
             src={Prizes2}
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             alt="prize1"
           />
           <div className="leading-relaxed">
@@ -51,8 +51,8 @@ export const Prizes = () => {
           <Image
             className=""
             src={Prizes1}
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             alt="prize1"
           />
           <div className="leading-relaxed">
@@ -71,8 +71,8 @@ export const Prizes = () => {
           <Image
             className=""
             src={Prizes2}
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             alt="prize1"
           />
           <div className="leading-relaxed">
@@ -91,8 +91,8 @@ export const Prizes = () => {
           <Image
             className=""
             src={Prizes3}
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             alt="prize1"
           />
           <div className="leading-relaxed">

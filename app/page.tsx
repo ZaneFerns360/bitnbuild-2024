@@ -18,7 +18,7 @@ export default function Home() {
         </div>{' '}
       </div>
 
-      <div className="w-full">
+      <div className="w-full bg-blue-200">
         <About />
         <Timeline />
         <Timeline2 />

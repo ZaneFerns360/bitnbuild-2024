@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '@variants'
 
 const Timeline = () => (
-  <div className="bg-[url('/assets/lavaa.jpg')] bg-cover bg-bottom bg-no-repeat">
+  <div className="bg-cover bg-bottom bg-no-repeat">
     <div className="mx-auto max-w-md py-5 text-center">
       <Image
         className="mx-auto text-center"

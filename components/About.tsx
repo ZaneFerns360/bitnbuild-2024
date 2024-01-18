@@ -31,7 +31,7 @@ const About = () => {
   // JSX structure with grid layout
   return (
     <div
-      className="bg-gradient-to-b from-yellow-800 to-orange-950 py-5 "
+      className=" py-5 "
       id="about"
     >
       <motion.div
