@@ -24,21 +24,19 @@ export const Prizes = () => {
           alt="Prizes"
         />
       </div>
-      <div className="">
-        
         <div className="px-5 text-center max-md:hidden md:mt-8">
           <Image
             className=""
             src={Prizes1}
-            width={800}
-            height={400}
+            width={500}
+            height={200}
             alt="prize1"
           />
-          <div className="leading-relaxed flex gap-12 items-center justify-center">
+          <div className="leading-relaxed flex gap-8 items-center justify-center">
             <p
               className={
                 bungee.className +
-                ' text-1xl my-3 mt-2 text-yellow-700 sm:text-3xl'
+                ' text-xl my-3 mt-3 text-yellow-700 sm:text-3xl'
               }
             >
               ₹ 25,000
@@ -46,7 +44,7 @@ export const Prizes = () => {
             <p
               className={
                 bungee.className +
-                ' text-1xl my-3 mt-2 text-yellow-700 sm:text-3xl'
+                ' text-xl my-3 mt-2 text-yellow-700 sm:text-3xl'
               }
             >
               ₹ 50,000
@@ -54,14 +52,13 @@ export const Prizes = () => {
             <p
               className={
                 bungee.className +
-                ' text-1xl my-3 mt-2 text-yellow-700 sm:text-3xl'
+                ' text-1xl my-3 mt-3 text-yellow-700 sm:text-3xl'
               }
             >
               ₹ 10,000
             </p>
           </div>
         </div>
-      </div>
     </section>
   )
 }

@@ -17,7 +17,7 @@ const Timeline2 = () => (
         className="right-timeline mb-8 flex w-full items-center justify-between"
       >
         <div className="order-1 w-5/12"></div>
-        <div className="z-20 order-1 flex h-8 w-8 items-center rounded-full bg-gray-800 shadow-xl">
+        <div className="z-20 order-1 flex h-8 w-8 mr-1 items-center rounded-full bg-gray-800 shadow-xl">
           <h1 className="mx-auto text-lg font-semibold text-white">1</h1>
         </div>
         <div className="cards-left order-1 w-7/12 rounded-lg bg-gray-400 px-6 py-4 shadow-xl">
@@ -36,7 +36,7 @@ const Timeline2 = () => (
         className="left-timeline mb-8 flex w-full flex-row-reverse items-center justify-between"
       >
         <div className="order-1 w-5/12"></div>
-        <div className="z-20 order-1 flex h-8 w-8 items-center rounded-full bg-gray-800 shadow-xl">
+        <div className="z-20 order-1 flex h-8 w-8 ml-1 items-center rounded-full bg-gray-800 shadow-xl">
           <h1 className="mx-auto text-lg font-semibold text-white">2</h1>
         </div>
         <div className="cards-left order-1 w-7/12 rounded-lg bg-red-400 px-6 py-4 shadow-xl">
@@ -57,7 +57,7 @@ const Timeline2 = () => (
         className="right-timeline mb-8 flex w-full items-center justify-between"
       >
         <div className="order-1 w-5/12"></div>
-        <div className="z-20 order-1 flex h-8 w-8 items-center rounded-full bg-gray-800 shadow-xl">
+        <div className="z-20 order-1 flex h-8 w-8 mr-1 items-center rounded-full bg-gray-800 shadow-xl">
           <h1 className="mx-auto text-lg font-semibold text-white">3</h1>
         </div>
         <div className="cards-left order-1 w-7/12 rounded-lg bg-gray-400 px-6 py-4 shadow-xl">
