@@ -2,7 +2,7 @@ import React from 'react'
 import { Bungee } from 'next/font/google'
 import Image from 'next/image'
 import PrizesImg from '@public/assets/tracks.png'
-import Prizes1 from '@public/assets/prizes/1stPrizes.png'
+import Prizes1 from '@public/assets/prizes/podium.png'
 import Prizes2 from '@public/assets/prizes/2ndPrizes.png'
 import Prizes3 from '@public/assets/prizes/3rdPrizes.png'
 
@@ -24,85 +24,40 @@ export const Prizes = () => {
           alt="Prizes"
         />
       </div>
-      <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-0">
-        {/* 1st place content */}
+      <div className="">
+        
         <div className="px-5 text-center max-md:hidden md:mt-8">
           <Image
             className=""
-            src={Prizes2}
-            width={300}
-            height={300}
+            src={Prizes1}
+            width={800}
+            height={400}
             alt="prize1"
           />
-          <div className="leading-relaxed">
+          <div className="leading-relaxed flex gap-12 items-center justify-center">
             <p
               className={
                 bungee.className +
-                ' text-1xl my-3 mt-2 text-yellow-500 sm:text-3xl'
+                ' text-1xl my-3 mt-2 text-yellow-700 sm:text-3xl'
               }
             >
               ₹ 25,000
             </p>
-          </div>
-        </div>
-
-        {/* 2nd place content */}
-        <div className="px-5 text-center">
-          <Image
-            className=""
-            src={Prizes1}
-            width={300}
-            height={300}
-            alt="prize1"
-          />
-          <div className="leading-relaxed">
             <p
               className={
                 bungee.className +
-                ' text-1xl my-3 mt-2 text-yellow-500 sm:text-3xl'
+                ' text-1xl my-3 mt-2 text-yellow-700 sm:text-3xl'
               }
             >
               ₹ 50,000
             </p>
-          </div>
-        </div>
-
-        <div className="px-5 text-center md:mt-8 md:hidden">
-          <Image
-            className=""
-            src={Prizes2}
-            width={300}
-            height={300}
-            alt="prize1"
-          />
-          <div className="leading-relaxed">
             <p
               className={
                 bungee.className +
-                ' text-1xl my-3 mt-2 text-yellow-500 sm:text-3xl'
+                ' text-1xl my-3 mt-2 text-yellow-700 sm:text-3xl'
               }
             >
-              ₹ 25,000
-            </p>
-          </div>
-        </div>
-        {/* 3rd place content */}
-        <div className="px-5 text-center md:mt-10">
-          <Image
-            className=""
-            src={Prizes3}
-            width={300}
-            height={300}
-            alt="prize1"
-          />
-          <div className="leading-relaxed">
-            <p
-              className={
-                bungee.className +
-                ' text-1xl my-3 mt-2 text-yellow-500 sm:text-3xl'
-              }
-            >
-              ₹ 15,000
+              ₹ 10,000
             </p>
           </div>
         </div>
