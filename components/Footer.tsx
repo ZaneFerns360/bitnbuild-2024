@@ -12,16 +12,19 @@ const bungee = Bungee({
 const Footer = () => {
   return (
     <div
-      className="flex w-full flex-col items-center justify-between bg-[url('/assets/img/minecraft-underwater.jpg')] bg-cover bg-no-repeat py-3 md:flex-row"
+      className="flex w-full flex-col items-center justify-between bg-[url('/assets/img/minecraft-underwater.jpg')] bg-cover bg-no-repeat py-3 md:flex-row
+      
+      "
       id="footer"
     >
+      
       <footer className="mx-auto flex w-full flex-col items-center justify-between px-4 py-5 sm:px-6 md:flex-row lg:px-8">
         <div className="mb-8 text-left md:mb-0">
           <div>
             <a
               className={
                 bungee.className +
-                ' border-text flex-none text-4xl font-semibold text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+                ' border-text flex-none text-2xl font-semibold text-white dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
               }
               href="#"
               aria-label="Brand"
@@ -30,7 +33,7 @@ const Footer = () => {
             </a>
           </div>
 
-          <div className="mt-3 text-2xl md:text-3xl">
+          <div className="mt-3 text-2xl md:text-2xl">
             <p className={bungee.className + ' border-text text-white'}>
               The Collaborative Hackathon{' '}
               <a
@@ -40,7 +43,9 @@ const Footer = () => {
                 }
                 href="#"
               >
-                -GDSC
+                
+                <span className='text-red-600'>G</span><span  className='text-blue-500'>D</span ><span  className='text-green-600'>S</span><span className='text-yellow-400' >C</span>
+              
               </a>{' '}
               family.
             </p>
