@@ -43,7 +43,7 @@ const faqItems = [
 export const Faq = () => {
   return (
     <>
-      <section className="py-3 mg:py-5 text-gray-900 md:h-screen" id="FAQ">
+      <section className="py-3 mg:py-5 text-gray-900" id="FAQ">
         <div className="mx-auto max-w-sm py-4 text-center">
           <Image
             className="mx-auto text-center"
@@ -59,11 +59,11 @@ export const Faq = () => {
             <h1 className="title-font border-text mb-4 text-center text-2xl font-semibold text-red-700 sm:text-4xl">
               Some common questions were often asked
             </h1>
-            <p className="border-text mx-auto leading-relaxed text-white sm:text-2xl lg:w-3/4 xl:w-2/4">
+            <p className="mx-auto leading-relaxed text-white sm:text-2xl lg:w-3/4 xl:w-2/4">
               The most common questions about how our hackathon will be conducted
             </p>
           </div>
-          <div className="-mx-2 flex flex-wrap sm:mx-auto sm:mb-2 lg:w-4/5">
+          <div className="-mx-2 flex flex-wrap sm:mb-2 ">
             {faqItems.map((item, index) => (
               <div key={index} className="w-full px-4 py-2 lg:w-1/2">
                 <details className="mb-4">

@@ -60,24 +60,3 @@
     -2px 2px 0 #000,
     2px 2px 0 #000;
 }
-
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #935926;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #175d07;
-  border-radius: 30px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #175d07;
-  border-radius: 30px;
-}
