@@ -1,6 +1,8 @@
 .faq-blur {
     background: url('../public/assets/minecraft-kelp.png');
     /* filter: blur(8px); Adjust the blur intensity as needed */
-    opacity: 0.2; /* Adjust the opacity as needed */
+    opacity: 0.4; /* Adjust the opacity as needed */
     background-repeat: no-repeat;
+    margin: 0 90px;
+    text-align: center;
   }

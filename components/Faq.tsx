@@ -50,7 +50,7 @@ export const Faq = () => {
     <>
       <div className='relative'>
         <div className='absolute inset-0 z-0 bg-cover bg-bottom faq-blur'></div>
-        <section className="relative z-10 py-3 md:py-10 text-gray-900" id="FAQ">
+        <section className="relative z-10 py-3 md:py-14 text-gray-900" id="FAQ">
           <div className="mx-auto max-w-sm pt-4 text-center">
             <Image
               className="mx-auto text-center"

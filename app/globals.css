@@ -60,3 +60,25 @@
     -2px 2px 0 #000,
     2px 2px 0 #000;
 }
+
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #1f012c;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #36ee98;
+  border-radius: 30px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #36ee48;
+  border-radius: 30px;
+}
