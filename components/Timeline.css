@@ -10,4 +10,5 @@
   background: url('../public/assets/Minecraft-Skins.png');
   /* filter: blur(8px); Adjust the blur intensity as needed */
   opacity: 0.1; /* Adjust the opacity as needed */
+  margin-top: 55px;
 }
