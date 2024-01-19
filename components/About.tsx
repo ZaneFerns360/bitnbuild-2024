@@ -64,7 +64,7 @@ const About = () => {
             <div className="leading-relaxed">
               <p
                 className={
-                  bungee.className + ' my-3 text-xl text-slate-800 sm:text-3xl'
+                  bungee.className + ' my-3 text-xl text-slate-800 sm:text-2xl'
                 }
               >
                 Welcome to BitnBuild 2024, a global hackathon in Mumbai! A
@@ -73,7 +73,7 @@ const About = () => {
               <p
                 className={
                   bungee.className +
-                  ' my-3 mt-2 text-xl text-slate-800 sm:text-3xl'
+                  ' my-3 mt-2 text-xl text-slate-800 sm:text-2xl'
                 }
               >
                 BitnBuild is your chance to shine as a developer. Are you ready

@@ -8,7 +8,7 @@ import { fadeIn } from '@variants'
 
 const Timeline = () => (
   <div className="bg-cover bg-bottom bg-no-repeat">
-    <div className="mx-auto max-w-md py-5 text-center">
+    <div className="mx-auto max-w-md pt-12 text-center">
       <Image
         className="mx-auto text-center"
         src="/assets/Schedule.png"
@@ -18,14 +18,14 @@ const Timeline = () => (
       />
     </div>
 
-    <div className="flex h-full items-center justify-center py-20">
+    <div className="flex h-full items-center justify-center pb-20 pt-12">
       <ul className="timeline timeline-vertical">
         <li>
           <div className="timeline-start timeline-box">
-            <h4 className="text-2xl font-bold text-black md:text-3xl lg:text-4xl">
+            <h4 className="text-xl font-bold text-black">
               January 28th - February 5th
             </h4>
-            <p className="text-sm md:text-base lg:text-lg">
+            <p >
               Registration for Internal State Hackathon.
             </p>
           </div>
@@ -63,10 +63,10 @@ const Timeline = () => (
             </svg>
           </div>
           <div className="timeline-end timeline-box">
-            <h4 className="text-2xl font-bold text-black md:text-3xl lg:text-4xl">
+            <h4 className="text-xl font-bold text-black">
               February 10th
             </h4>
-            <p className="text-sm md:text-base lg:text-lg"> Hackathon begins</p>
+            <p > Hackathon begins</p>
           </div>
           <hr />
         </li>
@@ -96,10 +96,10 @@ const Timeline = () => (
         <li>
           <hr />
           <div className="timeline-end timeline-box">
-            <h4 className="text-2xl font-bold text-black md:text-3xl lg:text-4xl">
+            <h4 className="text-xl font-bold text-black">
               February 24th
             </h4>
-            <p className="text-sm md:text-base lg:text-lg">
+            <p>
               National Teams Arrive to Mumbai.
             </p>
           </div>
@@ -136,10 +136,10 @@ const Timeline = () => (
             </svg>
           </div>
           <div className="timeline-start timeline-box">
-            <h4 className="text-2xl font-bold text-black md:text-3xl lg:text-4xl">
+            <h4 className="text-xl font-bold text-black">
               February 24th - February 25th
             </h4>
-            <p className="text-sm md:text-base lg:text-lg">
+            <p >
               Grand Finale at Fr. Conceicao Rodrigues College of Engineering.
             </p>
           </div>
@@ -148,10 +148,10 @@ const Timeline = () => (
         <li>
           <hr />
           <div className="timeline-end timeline-box">
-            <h4 className="text-2xl font-bold text-black md:text-3xl lg:text-4xl">
+            <h4 className="text-xl font-bold text-black">
               February 25th
             </h4>
-            <p className="text-sm md:text-base lg:text-lg">
+            <p >
               Final Results of BitNBuild Hackathon.
             </p>
           </div>
