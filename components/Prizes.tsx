@@ -1,7 +1,7 @@
 import React from 'react';
 import { Bungee } from 'next/font/google';
 import Image from 'next/image';
-import Prizes1 from '@public/assets/prizes/podium.png';
+import Prizes1 from '@public/assets/prizes/podium-2.png';
 import Grass from '@public/assets/blocks.png'
 import Grass2 from '@public/assets/blocks2.png'
 
@@ -39,8 +39,8 @@ export const Prizes = () => {
           <Image
             className="mx-auto"
             src={Prizes1}
-            width={450}
-            height={200}
+            width={500}
+            height={300}
             alt="prize1"
           />
           <div className="leading-relaxed flex gap-8 items-center justify-center">
