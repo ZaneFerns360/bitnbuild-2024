@@ -25,7 +25,7 @@ export const Prizes = () => {
       </div>
 
       {/* Static Grid of Prize1 Images */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-5 text-center md:mt-0">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 px-4 text-center md:mt-0">
         <div>
           <Image
             className="mx-auto hidden md:inline opacity-95"
@@ -43,7 +43,7 @@ export const Prizes = () => {
             height={300}
             alt="prize1"
           />
-          <div className="leading-relaxed flex gap-5 md:gap-10 items-center justify-center">
+          <div className="leading-relaxed flex gap-5 md:gap-6 items-center justify-center">
             {/* Prize Amounts */}
             <p
               className={
