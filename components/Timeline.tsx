@@ -8,7 +8,7 @@ import { fadeIn } from '@variants'
 
 const Timeline = () => (
   <div className="bg-cover bg-bottom bg-no-repeat">
-    <div className="mx-auto max-w-md pt-12 text-center">
+    <div className="mx-auto max-w-md pt-32 text-center">
       <Image
         className="mx-auto text-center"
         src="/assets/Schedule.png"

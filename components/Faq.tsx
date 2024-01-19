@@ -44,7 +44,7 @@ export const Faq = () => {
   return (
     <>
       <section className="py-3 mg:py-5 text-gray-900" id="FAQ">
-        <div className="mx-auto max-w-sm py-4 text-center">
+        <div className="mx-auto max-w-sm pt-4 text-center">
           <Image
             className="mx-auto text-center"
             src={FAQImg}
@@ -54,7 +54,7 @@ export const Faq = () => {
           />
         </div>
 
-        <div className="container mx-auto px-5 py-2 md:py-20">
+        <div className="container mx-auto px-5 ">
           <div className="my-10 text-center">
             <h1 className="title-font border-text mb-4 text-center text-2xl font-semibold text-red-700 sm:text-4xl">
               Some common questions were often asked
