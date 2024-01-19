@@ -4,3 +4,10 @@
 .cards-left {
   @apply bg-[url('/assets/ob-tex.jpg')];
 }
+
+/* Timeline.css */
+.people-blur {
+  background: url('../public/assets/Minecraft-Skins.png');
+  /* filter: blur(8px); Adjust the blur intensity as needed */
+  opacity: 0.1; /* Adjust the opacity as needed */
+}

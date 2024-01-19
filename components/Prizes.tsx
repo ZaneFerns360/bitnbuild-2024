@@ -44,32 +44,32 @@ export const Prizes = () => {
             alt="prize1"
           />
           <div className="leading-relaxed flex gap-8 items-center justify-center">
-        {/* Prize Amounts */}
-        <p
-          className={
-            bungee.className +
-            ' text-xl my-3 mt-10 text-yellow-700 sm:text-3xl'
-          }
-        >
-          ₹ 25,000
-        </p>
-        <p
-          className={
-            bungee.className +
-            ' text-xl my-3 mt-0 text-yellow-700 sm:text-3xl'
-          }
-        >
-          ₹ 50,000
-        </p>
-        <p
-          className={
-            bungee.className +
-            ' text-1xl my-3 mt-10 text-yellow-700 sm:text-3xl'
-          }
-        >
-          ₹ 10,000
-        </p>
-      </div>
+            {/* Prize Amounts */}
+            <p
+              className={
+                bungee.className +
+                ' text-xl my-3 mt-10 text-slate-100 sm:text-3xl'
+              }
+            >
+              ₹ 25,000
+            </p>
+            <p
+              className={
+                bungee.className +
+                ' text-xl my-3 mt-0 text-slate-100 sm:text-3xl'
+              }
+            >
+              ₹ 50,000
+            </p>
+            <p
+              className={
+                bungee.className +
+                ' text-1xl my-3 mt-10 text-slate-100 sm:text-3xl'
+              }
+            >
+              ₹ 10,000
+            </p>
+          </div>
         </div>
         <div>
           <Image

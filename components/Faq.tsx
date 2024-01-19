@@ -38,12 +38,16 @@ const faqItems = [
     question: 'Who will be judging?',
     answer: 'The judge panel composition will be announced closer to the date of the hackathon.',
   },
+  {
+    question: 'Any more queries?',
+    answer: 'Reach out to us on any social media platform.',
+  },
 ];
 
 export const Faq = () => {
   return (
     <>
-      <section className="py-3 mg:py-5 text-gray-900" id="FAQ">
+      <section className="py-3 md:py-10 text-gray-900" id="FAQ">
         <div className="mx-auto max-w-sm pt-4 text-center">
           <Image
             className="mx-auto text-center"
@@ -54,7 +58,7 @@ export const Faq = () => {
           />
         </div>
 
-        <div className="container mx-auto px-5 ">
+        <div className="container mx-auto px-5 py-3">
           <div className="my-10 text-center">
             <h1 className="title-font border-text mb-4 text-center text-2xl font-semibold text-red-700 sm:text-4xl">
               Some common questions were often asked
