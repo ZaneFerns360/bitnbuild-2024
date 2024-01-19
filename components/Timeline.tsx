@@ -8,7 +8,7 @@ import { fadeIn } from '@variants'
 
 const Timeline = () => (
   <div className='relative'>
-    <div className="absolute inset-0 z-0 bg-cover bg-bottom  people-blur"></div>
+    <div className="absolute inset-0 z-0 bg-cover bg-bottom people-blur"></div>
       <section className='mx-2 relative z-10'>
         <div className="mx-auto max-w-md pt-32 text-center">
           <Image

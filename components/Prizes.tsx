@@ -43,7 +43,7 @@ export const Prizes = () => {
             height={300}
             alt="prize1"
           />
-          <div className="leading-relaxed flex gap-8 items-center justify-center">
+          <div className="leading-relaxed flex gap-5 md:gap-10 items-center justify-center">
             {/* Prize Amounts */}
             <p
               className={
@@ -64,7 +64,7 @@ export const Prizes = () => {
             <p
               className={
                 bungee.className +
-                ' text-1xl my-3 mt-10 text-slate-100 sm:text-3xl'
+                ' text-xl my-3 mt-10 text-slate-100 sm:text-3xl'
               }
             >
               ₹ 10,000
