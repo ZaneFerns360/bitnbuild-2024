@@ -18,11 +18,11 @@ export default function Home() {
         </div>{' '}
       </div>
 
-      <div className="w-full bg-blue-200">
+      <div className="w-full bg-gradient-to-b from-blue-200 via-blue-300 to-blue-500">
         <About />
         <Prizes />
         <Timeline />
-        <Timeline2 />
+        {/*  <Timeline2 /> */}
         <Faq />
         <Footer />
       </div>

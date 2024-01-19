@@ -17,69 +17,49 @@ const Timeline = () => (
         alt="about-us"
       />
     </div>
-
-    <div className="flex h-full items-center justify-center ">
-      <div className="wrap relative h-full overflow-hidden p-10">
-        {/* right timeline */}
-        <motion.div
-          variants={fadeIn('right', 0.3)}
-          initial="hidden"
-          whileInView={'show'}
-          viewport={{ once: true, amount: 0.3 }}
-          className="right-timeline mb-8 flex w-full items-center justify-between"
-        >
-          <div className="order-1 w-5/12"></div>
-          <div className="z-20 order-1 flex h-8 w-8 mr-1 items-center rounded-full bg-gray-800 shadow-xl">
-            <h1 className="mx-auto text-lg font-semibold text-white">1</h1>
+    
+    <div className="flex h-full items-center justify-center py-20">
+      <ul className="timeline timeline-vertical">
+        <li>
+          <div className="timeline-start timeline-box">First Macintosh computer</div>
+          <div className="timeline-middle">
+          
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
           </div>
-          <div className="cards-right order-1 w-auto rounded-lg bg-gray-400 px-6 py-4 shadow-xl">
-            <h3 className="mb-3 text-xl font-bold text-white">
-              January 28th-February 5th
-            </h3>
-            <p className="text-sm leading-snug tracking-wide text-white ">
-              Registration for Internal State Hackathon.
-            </p>
+          <hr/>
+        </li>
+        <li>
+          <hr/>
+          <div className="timeline-middle ">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
           </div>
-        </motion.div>
-        {/* left timeline */}
-        <motion.div
-          variants={fadeIn('left', 0.3)}
-          initial="hidden"
-          whileInView={'show'}
-          viewport={{ once: true, amount: 0.3 }}
-          className="left-timeline mb-8 flex w-full flex-row-reverse items-center justify-between"
-        >
-          <div className="order-1 w-5/12"></div>
-          <div className="z-20 order-1 flex h-8 w-8 ml-1 items-center rounded-full bg-gray-800 shadow-xl">
-            <h1 className="mx-auto text-lg font-semibold text-white">2</h1>
+          <div className="timeline-end timeline-box">iMac</div>
+          <hr/>
+        </li>
+        <li>
+          <hr/>
+          <div className="timeline-start timeline-box">iPod</div>
+          <div className="timeline-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
           </div>
-          <div className="cards-right order-1 w-auto rounded-lg bg-red-400 px-6 py-4 shadow-xl">
-            <h3 className="mb-3 text-xl font-bold text-white">February 10th</h3>
-            <p className="text-sm font-medium leading-snug tracking-wide text-white text-opacity-100">
-              Hackathon Begins.
-            </p>
+          <hr/>
+        </li>
+        <li>
+          <hr/>
+          <div className="timeline-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
           </div>
-        </motion.div>
-        {/* right timeline */}
-        <motion.div
-          variants={fadeIn('right', 0.3)}
-          initial="hidden"
-          whileInView={'show'}
-          viewport={{ once: true, amount: 0.3 }}
-          className="right-timeline mb-8 flex w-full items-center justify-between"
-        >
-          <div className="order-1 w-5/12"></div>
-          <div className="z-20 order-1 flex h-8 w-8 mr-1 items-center rounded-full bg-gray-800 shadow-xl">
-            <h1 className="mx-auto text-lg font-semibold text-white">3</h1>
+          <div className="timeline-end timeline-box">iPhone</div>
+          <hr/>
+        </li>
+        <li>
+          <hr/>
+          <div className="timeline-start timeline-box">Apple Watch</div>
+          <div className="timeline-middle">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="w-5 h-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
           </div>
-          <div className="cards-right order-1 w-auto rounded-lg bg-gray-400 px-6 py-4 shadow-xl">
-            <h3 className="mb-3 text-xl font-bold text-white">February 10th</h3>
-            <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
-              Internal Hackathon Results.
-            </p>
-          </div>
-        </motion.div>
-      </div>
+        </li>
+      </ul>
     </div>
   </div>
 )
