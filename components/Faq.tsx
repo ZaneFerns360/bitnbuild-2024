@@ -59,7 +59,7 @@ export const Faq = () => {
             <h1 className="title-font border-text mb-4 text-center text-2xl font-semibold text-red-700 sm:text-4xl">
               Some common questions were often asked
             </h1>
-            <p className="border-text mx-auto leading-relaxed text-white sm:text-2xl lg:w-3/4 xl:w-2/4">
+            <p className="mx-auto leading-relaxed text-white sm:text-2xl lg:w-3/4 xl:w-2/4">
               The most common questions about how our hackathon will be conducted
             </p>
           </div>

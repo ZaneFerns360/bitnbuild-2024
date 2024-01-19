@@ -12,7 +12,7 @@ const bungee = Bungee({
 const Footer = () => {
   return (
     <div
-      className="flex w-full flex-col items-center justify-between bg-[url('/assets/Lava-footer.jpg')] bg-center bg-no-repeat py-3 md:flex-row"
+      className="flex w-full flex-col items-center justify-between bg-[url('/assets/img/minecraft-underwater.jpg')] bg-cover bg-no-repeat py-3 md:flex-row"
       id="footer"
     >
       <footer className="mx-auto flex w-full flex-col items-center justify-between px-4 py-5 sm:px-6 md:flex-row lg:px-8">

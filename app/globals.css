@@ -60,3 +60,12 @@
     -2px 2px 0 #000,
     2px 2px 0 #000;
 }
+
+.border-text-05 {
+  color: white;
+  text-shadow:
+    -0.5px -0.5px 0 #000,
+    0.5px -0.5px 0 #000,
+    -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+}
