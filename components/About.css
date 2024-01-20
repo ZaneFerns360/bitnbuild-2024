@@ -1,7 +1,8 @@
 .dolphins-blur {
-    /* background: url('../public/assets/'); */
+    background: url('../public/assets/AXO.png');
     /* filter: blur(8px); Adjust the blur intensity as needed */
     opacity: 0.2; /* Adjust the opacity as needed */
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+
   }
 
