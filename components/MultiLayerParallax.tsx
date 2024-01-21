@@ -21,15 +21,15 @@ export default function MultiLayerParallax() {
       className="relative grid min-h-screen w-full place-items-center overflow-hidden"
     >
       <motion.div
-        style={{ y: textY }}
+        style={{ y: textY, pointerEvents: 'none' }}
         className="absolute inset-0 z-40 pt-8 "
         transition={{ type: 'spring', stiffness: 50, damping: 5000 }}
       >
         <div className="inset-0 z-50 flex flex-col items-center justify-center space-y-5 p-4 pt-8 md:pt-1 ">
           <Image
             alt="GG"
-            width={500}
-            height={500}
+            width={300}
+            height={300}
             src="/assets/BnB-2.png"
             priority={true}
           ></Image>
@@ -49,7 +49,7 @@ export default function MultiLayerParallax() {
               priority={true}
             />
           </motion.div>
-          <button className="btn">Apply with Unstop</button>
+          <button className="btn pointer-events-auto">Apply with Unstop</button>
         </div>
       </motion.div>
 
@@ -60,6 +60,8 @@ export default function MultiLayerParallax() {
           backgroundImage: `url(/assets/water.jpg)`,
           backgroundPosition: 'top',
           backgroundSize: 'cover',
+          pointerEvents: 'none',
+
           y: backgroundY,
         }}
       />
@@ -76,7 +78,6 @@ export default function MultiLayerParallax() {
           className="absolute inset-0"
           style={{
             background: 'linear-gradient(180deg, transparent, #1a1c28)',
-
             backgroundPosition: 'bottom',
           }}
         />
