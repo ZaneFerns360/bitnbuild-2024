@@ -9,7 +9,7 @@ const bungee = Bungee({
 
 const NavBar = () => {
   return (
-    <header className="z-100 sticky top-0 bg-transparent  hover:bg-red-200 hover:bg-opacity-50 lg:shadow-none">
+    <header className="sticky top-0 z-50 bg-transparent  hover:bg-red-200 hover:bg-opacity-50 lg:shadow-none">
       <div className="container mx-auto px-4 py-4">
         <nav className="flex items-center justify-between">
           <a href="#home" className={bungee.className + ' p-2 text-xl'}>
