@@ -8,13 +8,6 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'BitnBuild',
   description: 'BitnBuild 2024 Organized by GDSC Fr.CRCE',
-  icons:{
-    icon:[
-      {
-        url:'/assets/BnB-3.png'
-      }
-    ]
-  }
 }
 
 export default function RootLayout({
