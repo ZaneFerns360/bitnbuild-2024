@@ -33,8 +33,8 @@ const NavBar = () => {
                 src={Logo}
                 alt="BitNBuild"
                 className="h-8 w-52"
-                width={100}
-                height={100}
+                width={1000}
+                height={1000}
               />
             </div>
 
