@@ -18,7 +18,7 @@ export default function Home() {
         </div>{' '}
       </div>
 
-      <div className="w-full bg-gradient-to-b from-blue-200 via-blue-300 to-blue-500">
+      <div className="w-full bg-[#1a1c28]">
         <About />
         <Prizes />
         <Timeline />

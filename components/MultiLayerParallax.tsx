@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
 import React, { useRef } from 'react'
 import Link from 'next/link'
 import '@components/button.css'
@@ -14,7 +14,7 @@ export default function MultiLayerParallax() {
   })
   const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '100%'])
   const textY = useTransform(scrollYProgress, [0, 1], ['0%', '200%'])
-
+  const scaleX = useScroll()
   return (
     <div
       ref={ref}
@@ -25,15 +25,31 @@ export default function MultiLayerParallax() {
         className="absolute inset-0 z-40 pt-8 "
         transition={{ type: 'spring', stiffness: 50, damping: 5000 }}
       >
-        <div className="inset-0 z-20 flex flex-col items-center justify-center space-y-5 p-4 pt-8 md:pt-5">
+        <div className="inset-0 z-50 flex flex-col items-center justify-center space-y-5 p-4 pt-8 md:pt-1 ">
           <Image
             alt="GG"
             width={500}
             height={500}
-            src="/assets/mc.png"
+            src="/assets/BnB-2.png"
             priority={true}
           ></Image>
-          <button className="btn">Sign Up</button>
+          <motion.div
+            animate={{ y: ['0px', '50px', '0px', '-50px', '0px'] }}
+            transition={{
+              duration: 5,
+              ease: 'easeInOut',
+              repeat: Infinity,
+            }}
+          >
+            <Image
+              alt="GG"
+              width={500}
+              height={500}
+              src="/assets/alex.webp"
+              priority={true}
+            />
+          </motion.div>
+          <button className="btn">Apply with Unstop</button>
         </div>
       </motion.div>
 
@@ -41,20 +57,29 @@ export default function MultiLayerParallax() {
         className="absolute inset-0 z-10"
         transition={{ type: 'spring', stiffness: 50, damping: 5000 }}
         style={{
-          backgroundImage: `url(/assets/site-bg-3.png)`,
+          backgroundImage: `url(/assets/water.jpg)`,
           backgroundPosition: 'top',
           backgroundSize: 'cover',
           y: backgroundY,
         }}
       />
       <div
-        className="absolute inset-0 z-40 w-full bg-cover bg-no-repeat"
+        className="absolute inset-0 z-20 w-full bg-cover bg-no-repeat"
         style={{
-          backgroundImage: `url(/assets/site2.png)`,
+          backgroundImage: `url(/assets/water.jpg)`,
+
           backgroundPosition: 'top',
           pointerEvents: 'none',
         }}
       >
+        <div
+          className="absolute inset-0"
+          style={{
+            background: 'linear-gradient(180deg, transparent, #1a1c28)',
+
+            backgroundPosition: 'bottom',
+          }}
+        />
         <div className="pointer-events-auto">
           {' '}
           <NavBar />

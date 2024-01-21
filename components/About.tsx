@@ -32,8 +32,8 @@ const About = () => {
   // JSX structure with grid layout
   return (
     <>
-      <div className='relative'>
-        <div className="absolute inset-0 z-0 bg-cover bg-bottom dolphins-blur"></div>
+      <div className="relative">
+        <div className="dolphins-blur absolute inset-0 z-0 bg-cover bg-bottom"></div>
         <section className="relative z-10 py-5 " id="about">
           <motion.div
             animate={inView1 ? 'visible' : 'hidden'}
@@ -68,7 +68,8 @@ const About = () => {
                 <div className="leading-relaxed">
                   <p
                     className={
-                      bungee.className + ' my-3 text-xl text-slate-800 sm:text-2xl'
+                      bungee.className +
+                      ' my-3 text-xl text-slate-200 sm:text-2xl'
                     }
                   >
                     Welcome to BitnBuild 2024, a global hackathon in Mumbai! A
@@ -77,11 +78,11 @@ const About = () => {
                   <p
                     className={
                       bungee.className +
-                      ' my-3 mt-2 text-xl text-slate-800 sm:text-2xl'
+                      ' my-3 mt-2 text-xl text-slate-200 sm:text-2xl'
                     }
                   >
-                    BitnBuild is your chance to shine as a developer. Are you ready
-                    to compete with the best and unlock your potential?
+                    BitnBuild is your chance to shine as a developer. Are you
+                    ready to compete with the best and unlock your potential?
                   </p>
                 </div>
               </div>
