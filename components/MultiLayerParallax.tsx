@@ -22,17 +22,18 @@ export default function MultiLayerParallax() {
     >
       <motion.div
         style={{ y: textY, pointerEvents: 'none' }}
-        className="absolute inset-0 z-40 pt-8 "
+        className="absolute inset-0 z-30 pt-8 "
         transition={{ type: 'spring', stiffness: 50, damping: 5000 }}
       >
-        <div className="inset-0 z-50 flex flex-col items-center justify-center space-y-5 p-4 pt-8 md:pt-1 ">
+        <div className="inset-0  flex flex-col items-center justify-center space-y-5 p-4 pt-8 md:pt-1 ">
           <Image
             alt="GG"
             width={300}
             height={300}
             src="/assets/BnB-2.png"
             priority={true}
-          ></Image>
+            className="z-0"
+          />
           <motion.div
             animate={{ y: ['0px', '50px', '0px', '-50px', '0px'] }}
             transition={{
@@ -53,8 +54,8 @@ export default function MultiLayerParallax() {
         </div>
       </motion.div>
 
-      <motion.div
-        className="absolute inset-0 z-10"
+      {/* <motion.div
+        className="absolute inset-0 z-20"
         transition={{ type: 'spring', stiffness: 50, damping: 5000 }}
         style={{
           backgroundImage: `url(/assets/water.jpg)`,
@@ -64,12 +65,12 @@ export default function MultiLayerParallax() {
 
           y: backgroundY,
         }}
-      />
+      /> */}
+
       <div
         className="absolute inset-0 z-20 w-full bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url(/assets/water.jpg)`,
-
           backgroundPosition: 'top',
           pointerEvents: 'none',
         }}
@@ -81,7 +82,7 @@ export default function MultiLayerParallax() {
             backgroundPosition: 'bottom',
           }}
         />
-        <div className="pointer-events-auto">
+        <div className="pointer-events-auto z-50">
           {' '}
           <NavBar />
         </div>
