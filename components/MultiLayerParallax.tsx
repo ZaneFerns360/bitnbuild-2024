@@ -1,6 +1,6 @@
 'use client'
 import Image from 'next/image'
-import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import React, { useRef } from 'react'
 import Link from 'next/link'
 import '@components/button.css'
@@ -14,22 +14,22 @@ export default function MultiLayerParallax() {
   })
   const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '100%'])
   const textY = useTransform(scrollYProgress, [0, 1], ['0%', '200%'])
-  const scaleX = useScroll()
+
   return (
     <div
       ref={ref}
       className="relative grid min-h-screen w-full place-items-center overflow-hidden"
     >
       <motion.div
-        style={{ y: textY, pointerEvents: 'none' }}
-        className="absolute inset-0 z-40 pt-8 "
+        style={{ y: textY }}
+        className="inset-0 z-30 pt-8 "
         transition={{ type: 'spring', stiffness: 50, damping: 5000 }}
       >
-        <div className="inset-0 z-50 flex flex-col items-center justify-center space-y-5 p-4 pt-8 md:pt-1 ">
+        <div className="inset-0 z-50 flex flex-col items-center justify-center space-y-8 md:space-y-5 p-4 pt-28 md:pt-5">
           <Image
             alt="GG"
-            width={300}
-            height={300}
+            width={450}
+            height={450}
             src="/assets/BnB-2.png"
             priority={true}
           ></Image>
@@ -43,8 +43,8 @@ export default function MultiLayerParallax() {
           >
             <Image
               alt="GG"
-              width={500}
-              height={500}
+              width={450}
+              height={450}
               src="/assets/alex.webp"
               priority={true}
             />
@@ -53,34 +53,13 @@ export default function MultiLayerParallax() {
         </div>
       </motion.div>
 
-      <motion.div
-        className="absolute inset-0 z-10"
-        transition={{ type: 'spring', stiffness: 50, damping: 5000 }}
-        style={{
-          backgroundImage: `url(/assets/water.jpg)`,
-          backgroundPosition: 'top',
-          backgroundSize: 'cover',
-          pointerEvents: 'none',
-
-          y: backgroundY,
-        }}
-      />
       <div
         className="absolute inset-0 z-20 w-full bg-cover bg-no-repeat"
         style={{
           backgroundImage: `url(/assets/water.jpg)`,
-
           backgroundPosition: 'top',
-          pointerEvents: 'none',
         }}
       >
-        <div
-          className="absolute inset-0"
-          style={{
-            background: 'linear-gradient(180deg, transparent, #1a1c28)',
-            backgroundPosition: 'bottom',
-          }}
-        />
         <div className="pointer-events-auto">
           {' '}
           <NavBar />
