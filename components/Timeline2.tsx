@@ -6,67 +6,90 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '@variants'
 
 const Timeline2 = () => (
-  <div className="flex h-full items-center justify-center bg-contain bg-repeat">
-    <div className="wrap relative h-full overflow-hidden p-10">
-      {/* right timeline */}
-      <motion.div
-        variants={fadeIn('right', 0.3)}
-        initial="hidden"
-        whileInView={'show'}
-        viewport={{ once: true, amount: 0.3 }}
-        className="right-timeline mb-8 flex w-full items-center justify-between"
-      >
-        <div className="order-1 w-5/12"></div>
-        <div className="z-20 order-1 flex h-8 w-8 mr-1 items-center rounded-full bg-gray-800 shadow-xl">
-          <h1 className="mx-auto text-lg font-semibold text-white">1</h1>
-        </div>
-        <div className="cards-left order-1 w-7/12 rounded-lg bg-gray-400 px-6 py-4 shadow-xl">
-          <h3 className="mb-3 text-xl font-bold text-white">February 24th</h3>
-          <p className="text-sm leading-snug tracking-wide text-white ">
-            Teams Arrive.
-          </p>
-        </div>
-      </motion.div>
-      {/* left timeline */}
-      <motion.div
-        variants={fadeIn('left', 0.3)}
-        initial="hidden"
-        whileInView={'show'}
-        viewport={{ once: true, amount: 0.3 }}
-        className="left-timeline mb-8 flex w-full flex-row-reverse items-center justify-between"
-      >
-        <div className="order-1 w-5/12"></div>
-        <div className="z-20 order-1 flex h-8 w-8 ml-1 items-center rounded-full bg-gray-800 shadow-xl">
-          <h1 className="mx-auto text-lg font-semibold text-white">2</h1>
-        </div>
-        <div className="cards-left order-1 w-7/12 rounded-lg bg-red-400 px-6 py-4 shadow-xl">
-          <h3 className="mb-3 text-xl font-bold text-white">
-            February 24th - February 25th
-          </h3>
-          <p className="text-sm font-medium leading-snug tracking-wide text-white">
-            Grand Finale at Fr. Conceicao Rodrigues College of Engineering.
-          </p>
-        </div>
-      </motion.div>
-      {/* right timeline */}
-      <motion.div
-        variants={fadeIn('right', 0.3)}
-        initial="hidden"
-        whileInView={'show'}
-        viewport={{ once: true, amount: 0.3 }}
-        className="right-timeline mb-8 flex w-full items-center justify-between"
-      >
-        <div className="order-1 w-5/12"></div>
-        <div className="z-20 order-1 flex h-8 w-8 mr-1 items-center rounded-full bg-gray-800 shadow-xl">
-          <h1 className="mx-auto text-lg font-semibold text-white">3</h1>
-        </div>
-        <div className="cards-left order-1 w-7/12 rounded-lg bg-gray-400 px-6 py-4 shadow-xl">
-          <h3 className="mb-3 text-xl font-bold text-white">February 25th</h3>
-          <p className="text-sm leading-snug tracking-wide text-white text-opacity-100">
-            Final Results of BitNBuild Hackathon.
-          </p>
-        </div>
-      </motion.div>
+  <div className="flex h-full items-center justify-center">
+    <div className="wrap relative h-full overflow-hidden p-5">
+      <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+        <li className=''>
+          <div className="timeline-middle text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+          </div>
+          <div className="bg-white rounded-xl p-4 timeline-start md:text-end mb-10">
+            <time className="font-mono text-lg font-black">January 28th - February 5th</time>
+            <div className="">Registration for Internal State Hackathon.</div>
+            
+          </div>
+          <hr />
+        </li>
+        <li className=''>
+          <hr />
+          <div className="timeline-middle text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+          </div>
+          <div className="bg-white rounded-xl p-4 timeline-end mb-10">
+            <time className="font-mono text-lg font-black">February 10th</time>
+            <div className="">Hackathon begins</div>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+          </div>
+          <div className="bg-white rounded-xl p-4 timeline-start md:text-end mb-10">
+            <time className="font-mono ">2001</time>
+            <div className="text-lg font-black">iPod</div>
+            The iPod is a discontinued series of portable media players and multi-purpose mobile devices designed and marketed by Apple Inc. The first version was released on October 23, 2001, about 8+1⁄2 months after the Macintosh version of iTunes was released. Apple sold an estimated 450 million iPod products as of 2022. Apple discontinued the iPod product line on May 10, 2022. At over 20 years, the iPod brand is the oldest to be discontinued by Apple
+          </div>
+          <hr />
+        </li>
+        <li className=''>
+          <hr />
+          <div className="timeline-middle text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+          </div>
+          <div className="bg-white rounded-xl p-4 timeline-end mb-10">
+            <time className="font-mono text-lg font-black">February 10th</time>
+            <div className="">Hackathon begins</div>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+          </div>
+          <div className="bg-white rounded-xl p-4 timeline-start md:text-end mb-10">
+            <time className="font-mono ">2001</time>
+            <div className="text-lg font-black">iPod</div>
+            The iPod is a discontinued series of portable media players and multi-purpose mobile devices designed and marketed by Apple Inc. The first version was released on October 23, 2001, about 8+1⁄2 months after the Macintosh version of iTunes was released. Apple sold an estimated 450 million iPod products as of 2022. Apple discontinued the iPod product line on May 10, 2022. At over 20 years, the iPod brand is the oldest to be discontinued by Apple
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+          </div>
+          <div className="bg-white rounded-xl p-4 timeline-end mb-10">
+            <time className="font-mono ">2007</time>
+            <div className="text-lg font-black">iPhone</div>
+            iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone accounts for 15.6% of global smartphone market share
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle text-white">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
+          </div>
+          <div className="bg-white rounded-xl p-4 timeline-start md:text-end mb-10">
+            <time className="font-mono ">2015</time>
+            <div className="text-lg font-black">Apple Watch</div>
+            
+          </div>
+        </li>
+      </ul>
     </div>
   </div>
 )
