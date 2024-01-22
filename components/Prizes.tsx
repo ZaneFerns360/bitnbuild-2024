@@ -36,13 +36,13 @@ export const Prizes = () => {
             <div className="bg-slate-700 px-4 py-10 rounded-lg shadow-md hover:bg-slate-600 md:order-2 hover:border-b-4  hover:border-amber-400">
               <GiTrophy className='text-amber-500 mx-auto my-4 text-5xl'/>
               <h2 className="text-2xl text-white font-bold">I Place</h2>
-              <p className="text-white text-3xl font-bold">₹50,000</p>
+              <p className="text-white text-3xl font-bold">₹30,000</p>
               <p className="text-slate-300 my-5">Winners will not only bask in the glory of success but also take home enticing rewards, including cash prizes, vouchers, goodies, and a plethora of other exciting surprises.</p>
             </div>
             <div className="bg-slate-700 px-4 py-10 rounded-lg shadow-md hover:bg-slate-600 md:order-1 hover:border-b-4  hover:border-gray-200">
             <HiMiniTrophy className='text-slate-300 mx-auto my-4 text-5xl'/>
               <h2 className="text-2xl text-white font-bold">II Place</h2>
-              <p className="text-white text-3xl font-bold">₹25,000</p>
+              <p className="text-white text-3xl font-bold">₹20,000</p>
               <p className="text-slate-300 my-5">Winners will not only bask in the glory of success but also take home enticing rewards, including cash prizes, vouchers, goodies, and a plethora of other exciting surprises.</p>
             </div>
             <div className="bg-slate-700 px-4 py-10 rounded-lg shadow-md hover:bg-slate-600 md:order-3 hover:border-b-4  hover:border-amber-600">
