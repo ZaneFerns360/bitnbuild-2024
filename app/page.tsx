@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <div className="w-full scroll-smooth">
       <div className="h-screen bg-no-repeat">
+      <NavBar />
         <div className="absolute inset-0 z-30   w-full bg-cover bg-no-repeat">
-          {/* <NavBar /> */}
           <MultiLayerParallax />
-        </div>{' '}
+        </div>
       </div>
 
       <div className="w-full bg-[#1a1c28]">
