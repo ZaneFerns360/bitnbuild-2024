@@ -29,7 +29,7 @@ const faqItems = [
   {
     question: 'What does it cost?',
     answer:
-      'Bit N Build entry prize is at ₹400/team. The prize money combined with the sponor money will enable us to pay for the trips of the selected teams.',
+      'Bit N Build entry cost is ₹400/team. The prize money combined with the sponor money will enable us to pay for the trips of the selected teams.',
   },
   {
     question: 'Who can participate? Are there any required skills?',

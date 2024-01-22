@@ -289,7 +289,7 @@ export default function Timeline() {
               <time className="font-mono text-lg font-black">4:30 PM</time>
               <div className="">
                 Results of the Internal Hackathon will be announced. 9 Teams
-                from the State will Represent thier State in the Final Round of
+                from the State will Represent their State in the Final Round of
                 Bit n Build.
               </div>
             </motion.div>
