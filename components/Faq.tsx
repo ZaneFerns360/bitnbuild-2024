@@ -1,14 +1,14 @@
-import React from 'react';
-import Image from 'next/image';
-import { Bungee } from 'next/font/google';
-import FAQImg from '@public/assets/FAQ.png';
+import React from 'react'
+import Image from 'next/image'
+import { Bungee } from 'next/font/google'
+import FAQImg from '@public/assets/FAQ.png'
 import './Faq.css'
 
 const bungee = Bungee({
   weight: '400',
   subsets: ['latin'],
   display: 'swap',
-});
+})
 
 // Define an array of FAQ items
 const faqItems = [
@@ -18,13 +18,18 @@ const faqItems = [
       'Hacking is a creative way to solve a problem, and hackathons are innovation marathons where students from around the country who have an interest in technology come together to learn, build & share their creations over the course of a weekend in a relaxed and welcoming atmosphere.',
   },
   {
+    question: 'Can you describe the scale of the event?',
+    answer:
+      'The scale of the event is both national and international, making it a grand platform for innovation and creativity. We are proud to collaborate with esteemed institutions across India such as IIT Ropar, IIT Mandi, NIT Patna, and NIT Calicut, among others. This partnership extends our reach and influence, allowing us to foster a diverse and dynamic community of tech enthusiasts from around the globe.',
+  },
+  {
     question: 'How many people per team?',
     answer: 'Teams can range anywhere from 2-4 people.',
   },
   {
     question: 'What does it cost?',
     answer:
-      'Bit N Build is free for all hackers! We provide our hackers with tools, swags, and prizes without any cost through our generous sponsors.',
+      'Bit N Build entry prize is at ₹400/team. The prize money combined with the sponor money will enable us to pay for the trips of the selected teams.',
   },
   {
     question: 'Who can participate? Are there any required skills?',
@@ -33,24 +38,26 @@ const faqItems = [
   },
   {
     question: 'Will there be food?',
-    answer: 'Yes, delicious food and beverages will be provided throughout the event.',
+    answer:
+      'Yes, delicious food and beverages will be provided throughout the event.',
   },
   {
     question: 'Who will be judging?',
-    answer: 'The judge panel composition will be announced closer to the date of the hackathon.',
+    answer:
+      'The judge panel composition will be announced closer to the date of the hackathon.',
   },
   {
     question: 'Any more queries?',
     answer: 'Reach out to us on any social media platform.',
   },
-];
+]
 
 export const Faq = () => {
   return (
     <>
-      <div className='relative'>
-        <div className='absolute inset-0 z-0 bg-cover faq-blur'></div>
-        <section className="relative z-10 py-3 md:py-14 text-gray-900" id="FAQ">
+      <div className="relative">
+        <div className="faq-blur absolute inset-0 z-0 bg-cover"></div>
+        <section className="relative z-10 py-3 text-gray-900 md:py-14" id="FAQ">
           <div className="mx-auto max-w-sm pt-4 text-center">
             <Image
               className="mx-auto text-center"
@@ -67,7 +74,8 @@ export const Faq = () => {
                 Some common questions were often asked
               </h1>
               <p className="mx-auto leading-relaxed text-white sm:text-2xl lg:w-3/4 xl:w-2/4">
-                The most common questions about how our hackathon will be conducted
+                The most common questions about how our hackathon will be
+                conducted
               </p>
             </div>
             <div className="-mx-2 flex flex-wrap sm:mb-2 ">
@@ -77,7 +85,9 @@ export const Faq = () => {
                     <summary className="rounded-md  bg-slate-100 px-4 py-3 font-semibold">
                       {item.question}
                     </summary>
-                    <span className="block rounded-md bg-white px-4 py-3">{item.answer}</span>
+                    <span className="block rounded-md bg-white px-4 py-3">
+                      {item.answer}
+                    </span>
                   </details>
                 </div>
               ))}
@@ -85,9 +95,8 @@ export const Faq = () => {
           </div>
         </section>
       </div>
-      
     </>
-  );
-};
+  )
+}
 
-export default Faq;
+export default Faq

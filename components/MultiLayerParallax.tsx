@@ -5,7 +5,9 @@ import React, { useRef } from 'react'
 import Link from 'next/link'
 import '@components/button.css'
 import NavBar from './NavBar'
-import Unstop from "@public/assets/unstop.png"
+import Unstop from '@public/assets/unstop.png'
+import Router from 'next/navigation'
+import { useRouter } from 'next/router'
 
 export default function MultiLayerParallax() {
   const ref = useRef(null)
@@ -15,7 +17,6 @@ export default function MultiLayerParallax() {
   })
   const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '100%'])
   const textY = useTransform(scrollYProgress, [0, 1], ['0%', '200%'])
-
   return (
     <div
       ref={ref}
@@ -51,7 +52,15 @@ export default function MultiLayerParallax() {
               priority={true}
             />
           </motion.div>
-          <button className="btn pointer-events-auto">Register with <Image src={Unstop} width={60} height={60} alt='unstop' /></button>
+          <Link
+            className="btn pointer-events-auto"
+            href={
+              'https://unstop.com/p/bit-n-build-international-hackathon-google-developer-student-clubs-crce-863579'
+            }
+          >
+            Register with{' '}
+            <Image src={Unstop} width={60} height={60} alt="unstop" />
+          </Link>
         </div>
       </motion.div>
 
@@ -81,7 +90,6 @@ export default function MultiLayerParallax() {
             backgroundPosition: 'bottom',
           }}
         />
-        
       </div>
     </div>
   )
