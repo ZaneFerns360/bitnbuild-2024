@@ -27,11 +27,11 @@ export default function MultiLayerParallax() {
         className="absolute inset-0 z-50 pt-8 "
         transition={{ type: 'spring', stiffness: 50, damping: 5000 }}
       >
-        <div className="inset-0 z-20 flex flex-col items-center justify-center space-y-5 p-4 pt-10">
+        <div className="inset-0 z-20 flex flex-col items-center justify-center space-y-5 p-4 pt-6">
           <Image
             alt="GG"
-            width={300}
-            height={300}
+            width={400}
+            height={400}
             src="/assets/BnB-2.png"
             priority={true}
             className="z-0"
@@ -47,7 +47,7 @@ export default function MultiLayerParallax() {
             <Image src={Unstop} width={60} height={60} alt="unstop" />
           </Link>
           <motion.div
-            animate={{ y: ['-300px', '0px', '0px', '0px'], x:['-650px','700px', '800px','900px'] }}
+            animate={{ y: ['0px','50px', '-50px', '0px'] }}
             transition={{
               duration: 5,
               ease: 'easeInOut',
