@@ -4,6 +4,7 @@ import Footer from '@components/Footer'
 import MultiLayerParallax from '@components/MultiLayerParallax'
 import NavBar from '@components/NavBar'
 import { Prizes } from '@components/Prizes'
+import Sponsors from '@components/Sponsors'
 import Timeline from '@components/Timeline'
 import Timeline2 from '@components/Timeline2'
 import Image from 'next/image'
@@ -24,6 +25,7 @@ export default function Home() {
         <Timeline />
         {/*  <Timeline2 /> */}
         <Faq />
+        <Sponsors />
         <Footer />
       </div>
     </div>
