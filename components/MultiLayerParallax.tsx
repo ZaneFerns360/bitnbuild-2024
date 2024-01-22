@@ -5,6 +5,7 @@ import React, { useRef } from 'react'
 import Link from 'next/link'
 import '@components/button.css'
 import NavBar from './NavBar'
+import Unstop from "@public/assets/unstop.png"
 
 export default function MultiLayerParallax() {
   const ref = useRef(null)
@@ -50,7 +51,7 @@ export default function MultiLayerParallax() {
               priority={true}
             />
           </motion.div>
-          <button className="btn pointer-events-auto">Apply with Unstop</button>
+          <button className="btn pointer-events-auto">Register with <Image src={Unstop} width={60} height={60} alt='unstop' /></button>
         </div>
       </motion.div>
 
