@@ -1,0 +1,6 @@
+.sponsor-blur {
+    background: url('../public/assets/minecraft-dolphins.png');
+    /* filter: blur(8px); Adjust the blur intensity as needed */
+    opacity: 0.2; /* Adjust the opacity as needed */
+    background-repeat: repeat;
+  }
