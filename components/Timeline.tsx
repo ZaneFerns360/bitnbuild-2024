@@ -17,7 +17,7 @@ export default function Timeline() {
   const textY = useTransform(scrollYProgress, [0, 1], ['0%', '200%'])
 
   return (
-    <div className="relative flex h-full items-center justify-center">
+    <div className="relative flex h-full items-center justify-center md:px-4">
       <div className="people-blur absolute inset-0 z-0  bg-cover"></div>
       <section className="wrap relative h-full overflow-hidden p-5">
         <Image
@@ -43,7 +43,13 @@ export default function Timeline() {
                 />
               </svg>
             </div>
-            <div className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start">
+            <motion.div
+              variants={fadeIn('right', 0.3)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: true, amount: 0.3 }}
+              className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start"
+            >
               <div className="text-lg font-black">
                 January 22nd - February 9th
               </div>
@@ -52,7 +58,7 @@ export default function Timeline() {
                 globe will register for this Phase 1 of the hackathon and only
                 few will be selected for the Phase 2, that is the Final Round.
               </div>
-            </div>
+            </motion.div>
             <hr />
           </li>
           <li className="">
@@ -71,7 +77,13 @@ export default function Timeline() {
                 />
               </svg>
             </div>
-            <div className="timeline-end mb-10 rounded-xl bg-white p-4">
+            <motion.div
+              variants={fadeIn('left', 0.3)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: true, amount: 0.3 }}
+              className="timeline-end mb-10 rounded-xl bg-white p-4"
+            >
               <div className="text-lg font-black">February 10th</div>
               <time className="font-mono text-lg font-black">4:30 PM</time>
               <div className="">
@@ -79,7 +91,7 @@ export default function Timeline() {
                 rules for the Hackathon and the timeline will be breifly
                 explained by the organisers.
               </div>
-            </div>
+            </motion.div>
             <hr />
           </li>
           <li>
@@ -98,7 +110,13 @@ export default function Timeline() {
                 />
               </svg>
             </div>
-            <div className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start">
+            <motion.div
+              variants={fadeIn('right', 0.3)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: true, amount: 0.3 }}
+              className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start"
+            >
               <div className="text-lg font-black">February 10th</div>
               <time className="font-mono text-lg font-black">5:00 PM</time>
               <div className="">
@@ -106,7 +124,7 @@ export default function Timeline() {
                 projects based on the released problem statements and prepare
                 for presenting them to the Judges/Mentors.
               </div>
-            </div>
+            </motion.div>
             <hr />
           </li>
           <li className="">
@@ -125,7 +143,13 @@ export default function Timeline() {
                 />
               </svg>
             </div>
-            <div className="timeline-end mb-10 rounded-xl bg-white p-4">
+            <motion.div
+              variants={fadeIn('left', 0.3)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: true, amount: 0.3 }}
+              className="timeline-end mb-10 rounded-xl bg-white p-4"
+            >
               <div className="text-lg font-black">February 10th</div>
               <time className="font-mono text-lg font-black">
                 5:00 PM - 6:00 PM
@@ -135,7 +159,7 @@ export default function Timeline() {
                 repository of the Project to the organising team so that they
                 have a track of their work.
               </div>
-            </div>
+            </motion.div>
             <hr />
           </li>
           <li>
@@ -154,7 +178,13 @@ export default function Timeline() {
                 />
               </svg>
             </div>
-            <div className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start">
+            <motion.div
+              variants={fadeIn('right', 0.3)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: true, amount: 0.3 }}
+              className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start"
+            >
               <div className="text-lg font-black">February 10th</div>
               <time className="font-mono text-lg font-black">9:00 PM</time>
               <div className="">
@@ -162,7 +192,7 @@ export default function Timeline() {
                 will review your progress and convey some points and places to
                 improve before the first judging round.
               </div>
-            </div>
+            </motion.div>
             <hr />
           </li>
           <li>
@@ -181,7 +211,13 @@ export default function Timeline() {
                 />
               </svg>
             </div>
-            <div className="timeline-end mb-10 rounded-xl bg-white p-4">
+            <motion.div
+              variants={fadeIn('left', 0.3)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: true, amount: 0.3 }}
+              className="timeline-end mb-10 rounded-xl bg-white p-4"
+            >
               <div className="text-lg font-black">February 11th</div>
               <time className="font-mono text-lg font-black">8:00 AM</time>
               <div className="">
@@ -190,7 +226,7 @@ export default function Timeline() {
                 you to implement some more features. Only few team will progress
                 to the next Juding Round.
               </div>
-            </div>
+            </motion.div>
             <hr />
           </li>
           <li>
@@ -209,7 +245,13 @@ export default function Timeline() {
                 />
               </svg>
             </div>
-            <div className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start">
+            <motion.div
+              variants={fadeIn('right', 0.3)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: true, amount: 0.3 }}
+              className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start"
+            >
               <div className="text-lg font-black">February 11th</div>
               <time className="font-mono text-lg font-black">2:00 PM</time>
               <div className="">
@@ -217,7 +259,7 @@ export default function Timeline() {
                 project to the panel one last time and the winners will progress
                 to the Phase 2, that is the Finals.
               </div>
-            </div>
+            </motion.div>
             <hr />
           </li>
           <li>
@@ -236,7 +278,13 @@ export default function Timeline() {
                 />
               </svg>
             </div>
-            <div className="timeline-end mb-10 rounded-xl bg-white p-4">
+            <motion.div
+              variants={fadeIn('left', 0.3)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: true, amount: 0.3 }}
+              className="timeline-end mb-10 rounded-xl bg-white p-4"
+            >
               <div className="text-lg font-black">February 11th</div>
               <time className="font-mono text-lg font-black">4:30 PM</time>
               <div className="">
@@ -244,7 +292,7 @@ export default function Timeline() {
                 from the State will Represent thier State in the Final Round of
                 Bit n Build.
               </div>
-            </div>
+            </motion.div>
             <hr />
           </li>
           <li>
@@ -263,14 +311,20 @@ export default function Timeline() {
                 />
               </svg>
             </div>
-            <div className="timeline-start mb-10 min-w-full rounded-xl bg-white p-4 md:text-start">
-              <div className="text-lg font-black">February 24th</div>
+            <motion.div
+              variants={fadeIn('right', 0.3)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: true, amount: 0.3 }}
+              className="timeline-start mb-10 min-w-full rounded-xl bg-white p-4 md:text-start"
+            >
+              <div className=" text-lg font-black">February 24th</div>
               {/* <time className="font-mono text-lg font-black">2:00 PM</time> */}
               <div className="">
                 The Teams from all over the State will Arrive in Mumbai, Bandra
                 for the Finals of Bit n Build.
               </div>
-            </div>
+            </motion.div>
             <hr />
           </li>
           <li>
@@ -289,7 +343,13 @@ export default function Timeline() {
                 />
               </svg>
             </div>
-            <div className="timeline-end mb-10 rounded-xl bg-white p-4">
+            <motion.div
+              variants={fadeIn('left', 0.3)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: true, amount: 0.3 }}
+              className="timeline-end mb-10 rounded-xl bg-white p-4"
+            >
               <div className="text-lg font-black">
                 February 24th - February 25th
               </div>
@@ -299,7 +359,7 @@ export default function Timeline() {
                 and the International Teams will compete in this 24 Hours Bit n
                 Build.
               </div>
-            </div>
+            </motion.div>
             <hr />
           </li>
           <li>
@@ -318,14 +378,20 @@ export default function Timeline() {
                 />
               </svg>
             </div>
-            <div className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start">
+            <motion.div
+              variants={fadeIn('right', 0.3)}
+              initial="hidden"
+              whileInView={'show'}
+              viewport={{ once: true, amount: 0.3 }}
+              className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start"
+            >
               <div className="text-lg font-black">February 25th</div>
               <div className="">
                 The Results Of Bit n Buil 2024 will be Announced after 24 hours.
                 The Winners will be Awarded with the Prizes Mentoned in the
                 Prizes section.
               </div>
-            </div>
+            </motion.div>
           </li>
         </ul>
       </section>
