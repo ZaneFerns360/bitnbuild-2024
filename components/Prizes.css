@@ -1,0 +1,7 @@
+.prizes-blur {
+    background: url('../public/assets/prizes/Prizes-Bg.png');
+    /* filter: blur(8px); Adjust the blur intensity as needed */
+    opacity: 0.4; /* Adjust the opacity as needed */
+    background-size: cover;
+  }
+

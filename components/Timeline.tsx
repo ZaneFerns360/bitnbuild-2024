@@ -17,7 +17,7 @@ export default function Timeline() {
   const textY = useTransform(scrollYProgress, [0, 1], ['0%', '200%'])
 
   return (
-    <div className="relative flex h-full items-center justify-center">
+    <div className="relative flex h-full items-center justify-center md:px-4">
        <div className='absolute inset-0 z-0 bg-cover  people-blur'></div>
       <section className="wrap relative h-full overflow-hidden p-5">
             <Image
@@ -32,11 +32,11 @@ export default function Timeline() {
             <div className="timeline-middle text-white">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="h-5 w-5"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clipRule="evenodd" /></svg>
             </div>
-            <div className="bg-white rounded-xl p-4 timeline-start md:text-start mb-10">
+            <motion.div variants={fadeIn('right',0.3)} initial='hidden' whileInView={'show'} viewport={{once:false, amount:0.3}} className="bg-white rounded-xl p-4 timeline-start md:text-start mb-10">
               <div className="text-lg font-black">January 22nd - February 9th</div>
               <div className="">Registration for Internal State Hackathon. Teams All across the globe will register for this Phase 1 of the hackathon and only few will be selected for the Phase 2, that is the Final Round.</div>
               
-            </div>
+            </motion.div>
             <hr />
           </li>
           <li className=''>
