@@ -57,6 +57,7 @@ export default function MultiLayerParallax() {
             href={
               'https://unstop.com/p/bit-n-build-international-hackathon-google-developer-student-clubs-crce-863579'
             }
+            target='_blank'
           >
             Register with{' '}
             <Image src={Unstop} width={60} height={60} alt="unstop" />
