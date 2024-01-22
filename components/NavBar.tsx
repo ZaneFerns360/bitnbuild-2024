@@ -89,10 +89,10 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="#footer"
+                  href="#prizes"
                   className="brand-font border-text font-bold text-green-700 hover:text-green-800 hover:underline"
                 >
-                  Contact Us{' '}
+                  Prizes{' '}
                 </a>
               </li>
               <li>
@@ -103,6 +103,23 @@ const NavBar = () => {
                   FAQ
                 </a>
               </li>
+              <li>
+                <a
+                  href="#Sponsor"
+                  className="brand-font border-text font-bold text-green-700 hover:text-green-800 hover:underline"
+                >
+                  Sponsors
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#footer"
+                  className="brand-font border-text font-bold text-green-700 hover:text-green-800 hover:underline"
+                >
+                  Contact Us{' '}
+                </a>
+              </li>
+              
             </ul>
           </div>
         </nav>

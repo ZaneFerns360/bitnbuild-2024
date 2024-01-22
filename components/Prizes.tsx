@@ -18,7 +18,7 @@ export const Prizes = () => {
   return (
     <div className='relative'>
       <div className='hidden md:inline absolute inset-0 z-0 bg-cover prizes-blur'></div>
-      <section className="relative flex flex-col items-center justify-center md:py-28">
+      <section className="relative flex flex-col items-center justify-center md:py-28" id='prizes'>
         <div className="mx-auto max-w-sm py-5 text-center">
           <Image
             className="mx-auto text-center"
