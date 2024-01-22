@@ -27,17 +27,27 @@ export default function MultiLayerParallax() {
         className="absolute inset-0 z-50 pt-8 "
         transition={{ type: 'spring', stiffness: 50, damping: 5000 }}
       >
-        <div className="inset-0 z-20 flex flex-col items-center justify-center space-y-5 p-4 pt-4 ">
+        <div className="inset-0 z-20 flex flex-col items-center justify-center space-y-5 p-4 pt-10">
           <Image
             alt="GG"
-            width={450}
-            height={450}
+            width={300}
+            height={300}
             src="/assets/BnB-2.png"
             priority={true}
             className="z-0"
           />
+          <Link
+            className="btn pointer-events-auto"
+            href={
+              'https://unstop.com/p/bit-n-build-international-hackathon-google-developer-student-clubs-crce-863579'
+            }
+            target='_blank'
+          >
+            Register with{' '}
+            <Image src={Unstop} width={60} height={60} alt="unstop" />
+          </Link>
           <motion.div
-            animate={{ y: ['0px', '50px', '0px', '-50px', '0px'] }}
+            animate={{ y: ['-300px', '0px', '0px', '0px'], x:['-650px','700px', '800px','900px'] }}
             transition={{
               duration: 5,
               ease: 'easeInOut',
@@ -52,16 +62,6 @@ export default function MultiLayerParallax() {
               priority={true}
             />
           </motion.div>
-          <Link
-            className="btn pointer-events-auto"
-            href={
-              'https://unstop.com/p/bit-n-build-international-hackathon-google-developer-student-clubs-crce-863579'
-            }
-            target='_blank'
-          >
-            Register with{' '}
-            <Image src={Unstop} width={60} height={60} alt="unstop" />
-          </Link>
         </div>
       </motion.div>
 
