@@ -26,7 +26,7 @@ export default function Sponsors() {
           className="relative z-10 py-3 text-gray-900 md:py-14"
           id="Sponsor"
         >
-          <div className="mx-auto max-w-sm pt-4 text-center">
+          <div className="mx-auto pt-4 text-center">
             <Image
               className="mx-auto text-center"
               src={SponsorImage}
@@ -42,6 +42,12 @@ export default function Sponsors() {
             >
               Title Sponsor
             </h1>
+            <h2 className={
+                bungee.className +
+                ' my-3 mb-10 mt-20 text-3xl font-bold text-slate-200 sm:text-3xl'
+            }>
+              3 6 9 Group of Companies
+            </h2>
             <Image
               className="mx-auto text-center"
               src={TitleSponsor}
