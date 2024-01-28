@@ -51,7 +51,7 @@ export default function Timeline() {
               className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start"
             >
               <div className="text-lg font-black">
-                January 22nd - February 8th
+                January 22nd - February 10th
               </div>
               <div className="">
                 Registration for Internal State Hackathon. Teams All across the
