@@ -51,7 +51,7 @@ export default function Timeline() {
               className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start"
             >
               <div className="text-lg font-black">
-                January 22nd - February 9th
+                January 22nd - February 8th
               </div>
               <div className="">
                 Registration for Internal State Hackathon. Teams All across the
@@ -84,7 +84,7 @@ export default function Timeline() {
               viewport={{ once: true, amount: 0.3 }}
               className="timeline-end mb-10 rounded-xl bg-white p-4"
             >
-              <div className="text-lg font-black">February 10th</div>
+              <div className="text-lg font-black">February 17th</div>
               <time className="font-mono text-lg font-black">4:30 PM</time>
               <div className="">
                 Inauguration Ceremony and release of problem statement. The
@@ -117,7 +117,7 @@ export default function Timeline() {
               viewport={{ once: true, amount: 0.3 }}
               className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start"
             >
-              <div className="text-lg font-black">February 10th</div>
+              <div className="text-lg font-black">February 17th</div>
               <time className="font-mono text-lg font-black">5:00 PM</time>
               <div className="">
                 Hackathon Begins. The team can now start implementing their
@@ -150,7 +150,7 @@ export default function Timeline() {
               viewport={{ once: true, amount: 0.3 }}
               className="timeline-end mb-10 rounded-xl bg-white p-4"
             >
-              <div className="text-lg font-black">February 10th</div>
+              <div className="text-lg font-black">February 17th</div>
               <time className="font-mono text-lg font-black">
                 5:00 PM - 6:00 PM
               </time>
@@ -185,7 +185,7 @@ export default function Timeline() {
               viewport={{ once: true, amount: 0.3 }}
               className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start"
             >
-              <div className="text-lg font-black">February 10th</div>
+              <div className="text-lg font-black">February 17th</div>
               <time className="font-mono text-lg font-black">9:00 PM</time>
               <div className="">
                 Mentoring Sessions will begin for all the teams. The mentors
@@ -218,7 +218,7 @@ export default function Timeline() {
               viewport={{ once: true, amount: 0.3 }}
               className="timeline-end mb-10 rounded-xl bg-white p-4"
             >
-              <div className="text-lg font-black">February 11th</div>
+              <div className="text-lg font-black">February 18th</div>
               <time className="font-mono text-lg font-black">8:00 AM</time>
               <div className="">
                 Judging Round 1 begins. In this the team will present their
@@ -252,7 +252,7 @@ export default function Timeline() {
               viewport={{ once: true, amount: 0.3 }}
               className="timeline-start mb-10 rounded-xl bg-white p-4 md:text-start"
             >
-              <div className="text-lg font-black">February 11th</div>
+              <div className="text-lg font-black">February 18th</div>
               <time className="font-mono text-lg font-black">2:00 PM</time>
               <div className="">
                 Judging Round 2 begins. In this, the teams will present their
@@ -285,7 +285,7 @@ export default function Timeline() {
               viewport={{ once: true, amount: 0.3 }}
               className="timeline-end mb-10 rounded-xl bg-white p-4"
             >
-              <div className="text-lg font-black">February 11th</div>
+              <div className="text-lg font-black">February 18th</div>
               <time className="font-mono text-lg font-black">4:30 PM</time>
               <div className="">
                 Results of the Internal Hackathon will be announced. 9 Teams
