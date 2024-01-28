@@ -42,10 +42,12 @@ export default function Sponsors() {
             >
               Title Sponsor
             </h1>
-            <h2 className={
+            <h2
+              className={
                 bungee.className +
                 ' my-3 mb-10 mt-20 text-3xl font-bold text-slate-200 sm:text-3xl'
-            }>
+              }
+            >
               3 6 9 Group of Companies
             </h2>
             <Image
@@ -127,6 +129,23 @@ export default function Sponsors() {
               <Image
                 className="mx-auto text-center"
                 src={Jdoodle}
+                width={300}
+                height={300}
+                alt="about-us"
+              />
+            </Link>
+            <h1
+              className={
+                bungee.className +
+                ' my-3 mb-10 mt-20 text-2xl text-slate-200 sm:text-2xl'
+              }
+            >
+              Beverage Sponsor
+            </h1>
+            <Link href="https://www.jdoodle.com/code-online-compiler-ide?utm_source=HackVSIT&utm_medium=Event&utm_campaign=Hackathon+Sponsorship">
+              <Image
+                className="mx-auto text-center"
+                src="/assets/img/redbull.png"
                 width={300}
                 height={300}
                 alt="about-us"
