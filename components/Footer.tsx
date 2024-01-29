@@ -10,6 +10,8 @@ const bungee = Bungee({
 })
 
 const Footer = () => {
+  console.log('Joyvin was here')
+
   return (
     <div
       className="flex w-full flex-col items-center justify-between bg-[url('/assets/img/minecraft-underwater.jpg')] bg-cover bg-no-repeat py-3 md:flex-row
@@ -17,7 +19,6 @@ const Footer = () => {
       "
       id="footer"
     >
-      
       <footer className="mx-auto flex w-full flex-col items-center justify-between px-4 py-5 sm:px-6 md:flex-row lg:px-8">
         <div className="mb-8 text-left md:mb-0">
           <div>
@@ -43,9 +44,10 @@ const Footer = () => {
                 }
                 href="#"
               >
-                
-                <span className='text-red-600'>G</span><span  className='text-blue-500'>D</span ><span  className='text-green-600'>S</span><span className='text-yellow-400' >C</span>
-              
+                <span className="text-red-600">G</span>
+                <span className="text-blue-500">D</span>
+                <span className="text-green-600">S</span>
+                <span className="text-yellow-400">C</span>
               </a>{' '}
               family.
             </p>
