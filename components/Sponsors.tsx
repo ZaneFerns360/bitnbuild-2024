@@ -10,6 +10,7 @@ import GamingPartner from '@public/assets/sponsors/simplygaming_edited.png'
 import Jdoodle from '@public/assets/sponsors/jdoodle.png'
 import Link from 'next/link'
 import './Sponsors.css'
+import Threesixninelogo from '@public/assets/369logo.png'
 
 const bungee = Bungee({
   weight: '400',
@@ -42,14 +43,13 @@ export default function Sponsors() {
             >
               Title Sponsor
             </h1>
-            <h2
-              className={
-                bungee.className +
-                ' my-3 mb-10 mt-20 text-3xl font-bold text-slate-200 sm:text-3xl'
-              }
-            >
-              3 6 9 Group of Companies
-            </h2>
+            <Image
+              className="mx-auto text-center mb-10"
+              src={Threesixninelogo}
+              width={350}
+              height={350}
+              alt="about-us"
+            />
             <Image
               className="mx-auto text-center"
               src={TitleSponsor}
