@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import { Bungee } from 'next/font/google'
 import { FaInstagram, FaGithub, FaTwitter, FaGoogle } from 'react-icons/fa'
