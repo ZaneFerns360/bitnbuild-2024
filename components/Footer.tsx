@@ -11,8 +11,9 @@ const bungee = Bungee({
 })
 
 const Footer = () => {
-  console.log('Joyvin was here')
-
+  if (typeof window !== 'undefined') {
+    console.log('Joyvin was here')
+  }
   return (
     <div
       className="flex w-full flex-col items-center justify-between bg-[url('/assets/img/minecraft-underwater.jpg')] bg-cover bg-no-repeat py-3 md:flex-row
