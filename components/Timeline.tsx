@@ -88,7 +88,7 @@ export default function Timeline() {
               <time className="font-mono text-lg font-black">4:30 PM</time>
               <div className="">
                 Inauguration Ceremony and release of problem statement. The
-                rules for the Hackathon and the timeline will be breifly
+                rules for the Hackathon and the timeline will be briefly
                 explained by the organisers.
               </div>
             </motion.div>
@@ -155,9 +155,10 @@ export default function Timeline() {
                 5:00 PM - 6:00 PM
               </time>
               <div className="">
-                During this time, The teams have to share their GitHub
-                repository of the Project to the organising team so that they
-                have a track of their work.
+                During this period, it is required for teams to provide the
+                organizing committee with access to their project’s GitHub
+                repository. This allows the committee to monitor the team’s
+                progress effectively.
               </div>
             </motion.div>
             <hr />
@@ -221,10 +222,11 @@ export default function Timeline() {
               <div className="text-lg font-black">February 18th</div>
               <time className="font-mono text-lg font-black">8:00 AM</time>
               <div className="">
-                Judging Round 1 begins. In this the team will present their
-                project to the panel and take inputs from them. They could ask
-                you to implement some more features. Only few team will progress
-                to the next Juding Round.
+                The commencement of Judging Round 1 marks the stage where teams
+                will showcase their projects to the panel. This interactive
+                session allows teams to receive valuable feedback and potential
+                suggestions for additional features. Please note that only a
+                select few teams will advance to the subsequent judging round.
               </div>
             </motion.div>
             <hr />
@@ -321,8 +323,8 @@ export default function Timeline() {
               <div className=" text-lg font-black">February 24th</div>
               {/* <time className="font-mono text-lg font-black">2:00 PM</time> */}
               <div className="">
-                The Teams from all over the State will Arrive in Mumbai, Bandra
-                for the Finals of Bit n Build.
+                The Teams from all over the country will Arrive at Bandra,
+                Mumbai for the Finale of Bit n Build.
               </div>
             </motion.div>
             <hr />
@@ -387,9 +389,9 @@ export default function Timeline() {
             >
               <div className="text-lg font-black">February 25th</div>
               <div className="">
-                The Results Of Bit n Buil 2024 will be Announced after 24 hours.
-                The Winners will be Awarded with the Prizes Mentoned in the
-                Prizes section.
+                The results of Bit n Build 2024 will be declared 24 hours
+                following the conclusion of the event. The victorious teams will
+                be conferred with the awards as detailed in the Prizes section.
               </div>
             </motion.div>
           </li>
