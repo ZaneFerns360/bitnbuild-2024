@@ -54,7 +54,7 @@ export default function Timeline() {
                 January 22nd - February 10th
               </div>
               <div className="">
-                Registration for Internal State Hackathon. Teams All across the
+                Registration for Internal State Hackathon. Teams all across the
                 globe will register for this Phase 1 of the hackathon and only
                 few will be selected for the Phase 2, that is the Final Round.
               </div>
@@ -155,10 +155,10 @@ export default function Timeline() {
                 5:00 PM - 6:00 PM
               </time>
               <div className="">
-                During this period, it is required for teams to provide the
-                organizing committee with access to their project’s GitHub
-                repository. This allows the committee to monitor the team’s
-                progress effectively.
+                During this period, the teams must provide access to their
+                project&apos;s Github repository to the organising committee.
+                This allows the committee to monitor the team’s progress
+                effectively.
               </div>
             </motion.div>
             <hr />
@@ -189,9 +189,9 @@ export default function Timeline() {
               <div className="text-lg font-black">February 17th</div>
               <time className="font-mono text-lg font-black">9:00 PM</time>
               <div className="">
-                Mentoring Sessions will begin for all the teams. The mentors
-                will review your progress and convey some points and places to
-                improve before the first judging round.
+                The mentors will review each team`&apos;s progress and will give
+                valuable feedback and areas for improvement before the first
+                judging round.
               </div>
             </motion.div>
             <hr />
@@ -323,7 +323,7 @@ export default function Timeline() {
               <div className=" text-lg font-black">February 24th</div>
               {/* <time className="font-mono text-lg font-black">2:00 PM</time> */}
               <div className="">
-                The Teams from all over the country will Arrive at Bandra,
+                The Teams from all over the country will arrive at Bandra,
                 Mumbai for the Finale of Bit n Build.
               </div>
             </motion.div>
