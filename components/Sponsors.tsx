@@ -44,7 +44,7 @@ export default function Sponsors() {
               Title Sponsor
             </h1>
             <Image
-              className="mx-auto text-center mb-10"
+              className="mx-auto mb-10 text-center"
               src={Threesixninelogo}
               width={350}
               height={350}
@@ -129,6 +129,23 @@ export default function Sponsors() {
               <Image
                 className="mx-auto text-center"
                 src={Jdoodle}
+                width={300}
+                height={300}
+                alt="about-us"
+              />
+            </Link>
+            <h1
+              className={
+                bungee.className +
+                ' my-3 mb-10 mt-20 text-2xl text-slate-200 sm:text-2xl'
+              }
+            >
+              Media Sponsor
+            </h1>
+            <Link href="https://startupnews.fyi/">
+              <Image
+                className="mx-auto text-center"
+                src="/assets/startup.jpg"
                 width={300}
                 height={300}
                 alt="about-us"
