@@ -140,7 +140,7 @@ export default function Sponsors() {
                 ' my-3 mb-10 mt-20 text-2xl text-slate-200 sm:text-2xl'
               }
             >
-              Media Sponsor
+              Media Partner
             </h1>
             <Link href="https://startupnews.fyi/">
               <Image
@@ -157,7 +157,7 @@ export default function Sponsors() {
                 ' my-3 mb-10 mt-20 text-2xl text-slate-200 sm:text-2xl'
               }
             >
-              Beverage Sponsor
+              Beverage Partner
             </h1>
             <Link href="https://www.jdoodle.com/code-online-compiler-ide?utm_source=HackVSIT&utm_medium=Event&utm_campaign=Hackathon+Sponsorship">
               <Image
