@@ -39,15 +39,14 @@ export default function MultiLayerParallax() {
           <Link
             className="btn pointer-events-auto"
             href={
-              'https://unstop.com/p/bit-n-build-international-hackathon-google-developer-student-clubs-crce-863579'
+              'https://drive.google.com/file/d/1dIahrcO5Y_b1z8hAUDB2C0dHCgUim3MO/view?usp=sharing'
             }
-            target='_blank'
+            target="_blank"
           >
-            Register with{' '}
-            <Image src={Unstop} width={60} height={60} alt="unstop" />
+            Problem Statements{' '}
           </Link>
           <motion.div
-            animate={{ y: ['0px','50px', '-50px', '0px'] }}
+            animate={{ y: ['0px', '50px', '-50px', '0px'] }}
             transition={{
               duration: 5,
               ease: 'easeInOut',
